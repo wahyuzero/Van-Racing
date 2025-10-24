@@ -15,6 +15,7 @@ import Blog from './pages/Blog';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import './App.css';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path="/cara-order" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-2xl">Cara Order - Coming Soon</h1></div>} />
             <Route path="/kontak" element={<Contact />} />
             <Route path="/kebijakan/*" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-2xl">Kebijakan - Coming Soon</h1></div>} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
