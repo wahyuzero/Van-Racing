@@ -4,4 +4,4 @@
 
 # Optional: Custom 404 redirect (kalau router gak nemuin path)
 # Ini bakal tampil halaman 404 kamu sendiri (misal /404.html)
-/404 /index.html 404
+/404 /404.html 404
