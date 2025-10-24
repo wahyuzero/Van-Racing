@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaWrench } from "react-icons/fa";
+// import { FaWrench } from "react-icons/fa";
 
 export default function NotFound() {
   return (
