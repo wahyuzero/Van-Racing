@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- Homepage -->
+  <url>
+    <loc>https://van-racing.com/</loc>
+    <lastmod>2024-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Main Pages -->
+  <url>
+    <loc>https://van-racing.com/produk</loc>
+    <lastmod>2024-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://van-racing.com/tentang</loc>
+    <lastmod>2024-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://van-racing.com/testimoni</loc>
+    <lastmod>2024-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://van-racing.com/faq</loc>
+    <lastmod>2024-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://van-racing.com/blog</loc>
+    <lastmod>2024-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://van-racing.com/galeri</loc>
+    <lastmod>2024-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://van-racing.com/kontak</loc>
+    <lastmod>2024-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Product Pages -->
+  <url>
+    <loc>https://van-racing.com/produk/custom-order</loc>
+    <lastmod>2024-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://van-racing.com/produk/ninja-250-full-system</loc>
+    <lastmod>2024-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://van-racing.com/produk/r25-full-system</loc>
+    <lastmod>2024-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://van-racing.com/produk/cbr150r-slip-on</loc>
+    <lastmod>2024-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://van-racing.com/produk/vixion-slip-on</loc>
+    <lastmod>2024-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://van-racing.com/blog/cara-memilih-knalpot-racing-sesuai-motor</loc>
+    <lastmod>2024-09-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://van-racing.com/blog/perbedaan-full-system-vs-slip-on</loc>
+    <lastmod>2024-09-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://van-racing.com/blog/tips-merawat-knalpot-stainless-steel</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://van-racing.com/blog/review-suara-knalpot-jvouse-motor-populer</loc>
+    <lastmod>2024-09-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://van-racing.com/blog/panduan-instalasi-knalpot-slip-on-pemula</loc>
+    <lastmod>2024-09-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
