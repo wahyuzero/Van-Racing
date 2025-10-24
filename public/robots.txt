@@ -17,6 +17,7 @@ Allow: /tentang
 Allow: /testimoni
 Allow: /faq
 Allow: /kontak
+Allow: /404
 
 # Crawl delay (optional)
 Crawl-delay: 1
