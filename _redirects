@@ -1,0 +1,7 @@
+# Handle all SPA routes (Netlify akan arahkan ke index.html)
+# Supaya /produk, /about, dll gak 404 saat di-refresh
+/* /index.html 200
+
+# Optional: Custom 404 redirect (kalau router gak nemuin path)
+# Ini bakal tampil halaman 404 kamu sendiri (misal /404.html)
+/404 /index.html 404
