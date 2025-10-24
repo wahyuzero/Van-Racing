@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Van Racing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #0a0a0a 100%);
+            overflow: hidden;
+        }
+        
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        
+        .particle {
+            position: absolute;
+            background: linear-gradient(45deg, #ff4500, #ff6b35);
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: float 15s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) translateX(0) scale(1);
+                opacity: 0.6;
+            }
+            50% {
+                transform: translateY(-100px) translateX(50px) scale(1.5);
+                opacity: 0.2;
+            }
+        }
+        
+        .glow-text {
+            text-shadow: 0 0 20px rgba(255, 69, 0, 0.8),
+                         0 0 40px rgba(255, 69, 0, 0.6),
+                         0 0 60px rgba(255, 69, 0, 0.4);
+            animation: glow-pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes glow-pulse {
+            0%, 100% {
+                text-shadow: 0 0 20px rgba(255, 69, 0, 0.8),
+                             0 0 40px rgba(255, 69, 0, 0.6),
+                             0 0 60px rgba(255, 69, 0, 0.4);
+            }
+            50% {
+                text-shadow: 0 0 30px rgba(255, 69, 0, 1),
+                             0 0 60px rgba(255, 69, 0, 0.8),
+                             0 0 90px rgba(255, 69, 0, 0.6);
+            }
+        }
+        
+        .racing-line {
+            position: absolute;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #ff4500, transparent);
+            width: 200px;
+            animation: race-across 2s linear infinite;
+        }
+        
+        @keyframes race-across {
+            0% {
+                left: -200px;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+        
+        .bike-icon {
+            animation: bike-wobble 1.5s ease-in-out infinite;
+            filter: drop-shadow(0 0 20px rgba(255, 69, 0, 0.7));
+        }
+        
+        @keyframes bike-wobble {
+            0%, 100% {
+                transform: translateX(-10px) rotate(-2deg);
+            }
+            50% {
+                transform: translateX(10px) rotate(2deg);
+            }
+        }
+        
+        .btn-glow {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(255, 69, 0, 0.5);
+        }
+        
+        .btn-glow:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 40px rgba(255, 69, 0, 0.8);
+        }
+        
+        .btn-glow::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        
+        .btn-glow:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .speed-lines {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .speed-line {
+            position: absolute;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 69, 0, 0.5), transparent);
+            animation: speed-move 1s linear infinite;
+        }
+        
+        @keyframes speed-move {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .exhaust-smoke {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: radial-gradient(circle, rgba(150, 150, 150, 0.4), transparent);
+            border-radius: 50%;
+            animation: smoke-rise 3s ease-out infinite;
+        }
+        
+        @keyframes smoke-rise {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 0.6;
+            }
+            100% {
+                transform: translateY(-200px) scale(2);
+                opacity: 0;
+            }
+        }
+        
+        .number-404 {
+            font-size: 12rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, #ff4500, #ff8c00, #ff4500);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradient-shift 3s ease infinite;
+        }
+        
+        @keyframes gradient-shift {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .number-404 {
+                font-size: 6rem;
+            }
+        }
+    </style>
+</head>
+<body class="relative min-h-screen flex items-center justify-center">
+    <!-- Animated Particles Background -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Speed Lines Effect -->
+    <div class="speed-lines" id="speedLines"></div>
+    
+    <!-- Racing Lines -->
+    <div class="racing-line" style="top: 20%;"></div>
+    <div class="racing-line" style="top: 80%; animation-delay: 1s;"></div>
+    
+    <!-- Main Content -->
+    <div class="relative z-10 text-center px-4">
+        <!-- Exhaust Smoke Effects -->
+        <div class="exhaust-smoke" style="left: 30%; top: 60%; animation-delay: 0s;"></div>
+        <div class="exhaust-smoke" style="left: 70%; top: 40%; animation-delay: 1.5s;"></div>
+        
+        <!-- 404 Number with Animation -->
+        <div class="fade-in-up" style="transform: translateY(30px); animation-delay: 0.2s;">
+            <h1 class="number-404 mb-4">404</h1>
+        </div>
+        
+        <!-- Motorcycle Icon -->
+        <div class="fade-in-up mb-6" style="transform: translateY(30px); animation-delay: 0.4s;">
+            <i class="fas fa-motorcycle bike-icon text-7xl text-orange-500"></i>
+        </div>
+        
+        <!-- Error Message -->
+        <div class="fade-in-up mb-4" style="transform: translateY(30px); animation-delay: 0.6s;">
+            <h2 class="text-4xl md:text-5xl font-bold text-white glow-text mb-4">
+                OOPS! SALAH JALUR
+            </h2>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
+                Halaman yang kamu cari sepertinya sudah terbang kencang dan nggak ketemu. 
+                Mungkin knalpotnya terlalu racing! 🏁
+            </p>
+        </div>
+        
+        <!-- Action Buttons -->
+        <div class="fade-in-up flex flex-col sm:flex-row gap-4 justify-center items-center mt-8" style="transform: translateY(30px); animation-delay: 0.8s;">
+            <a href="https://van-racing.netlify.app/" 
+               class="btn-glow relative bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold px-8 py-4 rounded-full inline-flex items-center gap-3 group">
+                <i class="fas fa-home text-xl"></i>
+                <span class="relative z-10">Kembali ke Home</span>
+            </a>
+            
+            <button onclick="history.back()" 
+                    class="btn-glow relative bg-gray-800 hover:bg-gray-700 text-white font-semibold px-8 py-4 rounded-full inline-flex items-center gap-3 border border-orange-500">
+                <i class="fas fa-arrow-left text-xl"></i>
+                <span class="relative z-10">Halaman Sebelumnya</span>
+            </button>
+        </div>
+        
+        <!-- Additional Info -->
+        <div class="fade-in-up mt-12" style="transform: translateY(30px); animation-delay: 1s;">
+            <p class="text-gray-500 text-sm flex items-center justify-center gap-2">
+                <i class="fas fa-fire text-orange-500"></i>
+                <span>Van Racing Indonesia - Knalpot Custom & Racing Motor</span>
+                <i class="fas fa-fire text-orange-500"></i>
+            </p>
+        </div>
+    </div>
+    
+    <!-- Animated Background Elements -->
+    <div class="fixed bottom-10 left-10 text-orange-500 opacity-10 text-9xl">
+        <i class="fas fa-cog animate-spin" style="animation-duration: 8s;"></i>
+    </div>
+    <div class="fixed top-10 right-10 text-orange-500 opacity-10 text-9xl">
+        <i class="fas fa-cog animate-spin" style="animation-duration: 10s; animation-direction: reverse;"></i>
+    </div>
+
+    <script>
+        // Create Floating Particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 30;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                const size = Math.random() * 5 + 2;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                particle.style.animationDelay = `${Math.random() * 5}s`;
+                particle.style.animationDuration = `${Math.random() * 10 + 10}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        // Create Speed Lines
+        function createSpeedLines() {
+            const speedLinesContainer = document.getElementById('speedLines');
+            const lineCount = 15;
+            
+            for (let i = 0; i < lineCount; i++) {
+                const line = document.createElement('div');
+                line.className = 'speed-line';
+                line.style.top = `${Math.random() * 100}%`;
+                line.style.width = `${Math.random() * 200 + 100}px`;
+                line.style.animationDelay = `${Math.random() * 2}s`;
+                line.style.animationDuration = `${Math.random() * 2 + 0.5}s`;
+                
+                speedLinesContainer.appendChild(line);
+            }
+        }
+        
+        // Mouse Movement Parallax Effect
+        document.addEventListener('mousemove', (e) => {
+            const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+            const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+            
+            document.querySelectorAll('.bike-icon').forEach(icon => {
+                icon.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            });
+        });
+        
+        // Initialize
+        createParticles();
+        createSpeedLines();
+        
+        // Easter Egg: Konami Code
+        let konamiCode = [];
+        const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+        
+        document.addEventListener('keydown', (e) => {
+            konamiCode.push(e.key);
+            konamiCode = konamiCode.slice(-10);
+            
+            if (konamiCode.join(',') === konamiSequence.join(',')) {
+                document.body.style.animation = 'rainbow 2s linear infinite';
+                alert('🏍️ TURBO MODE ACTIVATED! 🔥');
+            }
+        });
+    </script>
+    
+    <style>
+        @keyframes rainbow {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+    </style>
+</body>
+</html>
