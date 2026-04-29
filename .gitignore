@@ -76,3 +76,5 @@ ios/
 *.env.backup
 !.env.example
 
+# Local orchestration artifacts
+.sisyphus/

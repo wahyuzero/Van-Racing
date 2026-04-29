@@ -18,8 +18,22 @@ export const products = [
       warranty: "1 Tahun"
     },
     compatibility: ["Yamaha R25", "Yamaha R25 2019-2024"],
+    fitment: {
+      make: "Yamaha",
+      model: "R25",
+      yearStart: 2019,
+      yearEnd: 2024,
+      useCaseTags: ["weekend", "track", "harian"]
+    },
     soundType: "medium",
     material: "stainless",
+    availabilityState: {
+      status: "ready_stock",
+      label: "Ready Stock"
+    },
+    relatedWorkshopServiceIds: ["professional-installation", "tuning-dyno"],
+    workshopApplicability: ["install-fitment", "performance-support"],
+    proofTags: ["sound-demo", "customer-review", "fitment-proof"],
     description: "Knalpot full system premium untuk Yamaha R25 dengan material stainless steel 304 berkualitas tinggi. Menghasilkan suara racing yang khas namun tidak terlalu berisik untuk penggunaan harian. Desain sporty dengan performa maksimal dan garansi 1 tahun.",
     features: [
       "Material Stainless Steel 304 Anti Karat",
@@ -68,8 +82,22 @@ export const products = [
       warranty: "1 Tahun"
     },
     compatibility: ["Honda CBR150R", "Honda CBR150R K45G"],
+    fitment: {
+      make: "Honda",
+      model: "CBR150R",
+      yearStart: null,
+      yearEnd: null,
+      useCaseTags: ["harian", "weekend"]
+    },
     soundType: "silent",
     material: "carbon",
+    availabilityState: {
+      status: "pre_order",
+      label: "Pre-order"
+    },
+    relatedWorkshopServiceIds: ["professional-installation"],
+    workshopApplicability: ["install-fitment"],
+    proofTags: ["customer-review", "daily-use"],
     description: "Knalpot slip on dengan tampilan carbon fiber yang elegan untuk Honda CBR150R. Cocok untuk penggunaan harian dengan suara yang tidak terlalu berisik namun tetap memberikan karakter racing yang khas.",
     features: [
       "Tampilan Carbon Fiber Premium",
@@ -111,8 +139,22 @@ export const products = [
       warranty: "1 Tahun"
     },
     compatibility: ["Kawasaki Ninja 250", "Kawasaki Ninja 250 FI"],
+    fitment: {
+      make: "Kawasaki",
+      model: "Ninja 250",
+      yearStart: null,
+      yearEnd: null,
+      useCaseTags: ["track", "weekend"]
+    },
     soundType: "racing",
     material: "titanium",
+    availabilityState: {
+      status: "workshop_only",
+      label: "Workshop Only"
+    },
+    relatedWorkshopServiceIds: ["professional-installation", "tuning-dyno"],
+    workshopApplicability: ["install-fitment", "performance-support"],
+    proofTags: ["sound-demo", "track-use", "installation-check"],
     description: "Knalpot full system dengan finishing titanium look untuk Kawasaki Ninja 250. Menghasilkan suara racing yang loud dan berkarakter. Cocok untuk track day dan penggunaan sport riding.",
     features: [
       "Finishing Titanium Look Premium",
@@ -153,8 +195,22 @@ export const products = [
       warranty: "6 Bulan"
     },
     compatibility: ["Yamaha Vixion", "Yamaha New Vixion", "Yamaha Vixion Advance"],
+    fitment: {
+      make: "Yamaha",
+      model: "Vixion",
+      yearStart: null,
+      yearEnd: null,
+      useCaseTags: ["harian", "weekend"]
+    },
     soundType: "medium",
     material: "stainless",
+    availabilityState: {
+      status: "unknown",
+      label: "Perlu konfirmasi tim"
+    },
+    relatedWorkshopServiceIds: ["professional-installation", "maintenance-repair"],
+    workshopApplicability: ["install-fitment", "maintenance-repair"],
+    proofTags: ["fitment-proof", "daily-use"],
     description: "Knalpot slip on ekonomis untuk Yamaha Vixion dengan kualitas stainless steel yang terjangkau. Suara medium yang pas untuk penggunaan sehari-hari.",
     features: [
       "Harga Terjangkau",
@@ -186,8 +242,22 @@ export const products = [
       warranty: "1 Tahun"
     },
     compatibility: ["Semua Motor"],
+    fitment: {
+      make: null,
+      model: null,
+      yearStart: null,
+      yearEnd: null,
+      useCaseTags: ["custom", "track", "harian", "weekend"]
+    },
     soundType: "custom",
     material: "custom",
+    availabilityState: {
+      status: "made_by_request",
+      label: "Made by Request"
+    },
+    relatedWorkshopServiceIds: ["custom-exhaust"],
+    workshopApplicability: ["custom-fabrication"],
+    proofTags: ["custom-build", "consultation"],
     description: "Layanan custom knalpot sesuai dengan kebutuhan dan spesifikasi motor Anda. Konsultasi gratis untuk menentukan material, suara, dan desain yang tepat.",
     features: [
       "Konsultasi Gratis",

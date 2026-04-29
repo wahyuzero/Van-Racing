@@ -12,6 +12,7 @@ import Workshop from './pages/Workshop';
 import Testimonials from './pages/Testimonials';
 import FAQ from './pages/FAQ';
 import Blog from './pages/Blog';
+import BlogDetail from './pages/BlogDetail';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import './App.css';
@@ -35,7 +36,7 @@ function App() {
             <Route path="/testimoni" element={<Testimonials />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:id" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-2xl">Artikel Blog - Coming Soon</h1></div>} />
+            <Route path="/blog/:slug" element={<BlogDetail />} />
             <Route path="/galeri" element={<Gallery />} />
             <Route path="/cara-order" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-2xl">Cara Order - Coming Soon</h1></div>} />
             <Route path="/kontak" element={<Contact />} />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 import SEO from '../components/common/SEO';
 import Hero from '../components/home/Hero';
 import FeaturedProducts from '../components/home/FeaturedProducts';
@@ -15,10 +15,37 @@ import {
   CheckCircle
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { testimonials } from '../data/testimonials';
+import { openWhatsAppCta } from '@/lib/site';
+import { emitFitmentUsage } from '@/lib/analytics';
+import { blogPosts } from '@/content';
 
 const Home = () => {
+  const navigate = useNavigate();
+  const [fitmentForm, setFitmentForm] = useState({
+    make: '',
+    model: '',
+    year: '',
+    useCase: '',
+  });
+
+  const makeOptions = ['Yamaha', 'Honda', 'Kawasaki', 'Suzuki', 'Lainnya'];
+  const useCaseOptions = [
+    { value: 'harian', label: 'Harian / commuting' },
+    { value: 'weekend', label: 'Weekend ride' },
+    { value: 'track', label: 'Track day / racing' },
+    { value: 'custom', label: 'Butuh arahan custom' },
+  ];
+
+  const modelOptionsByMake = {
+    Yamaha: ['R25', 'Vixion', 'R15', 'NMAX', 'MT-25'],
+    Honda: ['CBR150R', 'CB150R', 'CBR250RR', 'PCX'],
+    Kawasaki: ['Ninja 250', 'Z250', 'KLX'],
+    Suzuki: ['GSX-R150', 'Satria F150'],
+    Lainnya: ['Tulis manual di katalog'],
+  };
+
   const features = [
     {
       icon: Award,
@@ -69,32 +96,37 @@ const Home = () => {
 
   const testimonialPreview = testimonials.slice(0, 3);
 
-  const blogPosts = [
-    {
-      id: 1,
-      title: 'Cara Memilih Knalpot Racing Sesuai Motor Anda',
-      excerpt: 'Panduan lengkap memilih knalpot yang tepat berdasarkan jenis motor, kebutuhan, dan budget.',
-      image: '/A1.jpeg',
-      date: '2024-09-20',
-      readTime: '5 min'
-    },
-    {
-      id: 2,
-      title: 'Perbedaan Full System vs Slip On: Mana yang Lebih Baik?',
-      excerpt: 'Analisis mendalam tentang kelebihan dan kekurangan masing-masing jenis knalpot.',
-      image: '/A2.jpeg',
-      date: '2024-09-18',
-      readTime: '7 min'
-    },
-    {
-      id: 3,
-      title: 'Tips Merawat Knalpot Stainless Steel Agar Awet',
-      excerpt: 'Cara mudah merawat knalpot stainless steel agar tetap mengkilap dan tahan lama.',
-      image: '/A3.jpeg',
-      date: '2024-09-15',
-      readTime: '4 min'
-    }
-  ];
+  const blogPreview = useMemo(() => blogPosts.slice(0, 3), []);
+
+  const handleFitmentFieldChange = (field) => (event) => {
+    const value = event.target.value;
+    setFitmentForm((current) => ({
+      ...current,
+      [field]: value,
+      ...(field === 'make' ? { model: '' } : {}),
+    }));
+  };
+
+  const handleFitmentSubmit = () => {
+    emitFitmentUsage({
+      surface: 'home_fitment_discovery',
+      action: 'submit',
+      bike_make: fitmentForm.make || null,
+      bike_model: fitmentForm.model || null,
+      bike_year: fitmentForm.year || null,
+      use_case: fitmentForm.useCase || null,
+      matched_by: 'structured_fitment_query',
+    });
+
+    const params = new URLSearchParams();
+
+    if (fitmentForm.make) params.set('make', fitmentForm.make);
+    if (fitmentForm.model) params.set('model', fitmentForm.model);
+    if (fitmentForm.year) params.set('year', fitmentForm.year);
+    if (fitmentForm.useCase) params.set('useCase', fitmentForm.useCase);
+
+    navigate(`/produk${params.toString() ? `?${params.toString()}` : ''}`);
+  };
 
   return (
     <div className="min-h-screen">
@@ -108,6 +140,104 @@ const Home = () => {
       
       {/* Hero Section */}
       <Hero />
+
+      <section className="bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="rounded-3xl border border-gray-200 bg-gray-50 p-6 md:p-8 shadow-sm">
+            <div className="max-w-3xl mb-8">
+              <span className="inline-flex items-center rounded-full bg-red-100 px-3 py-1 text-sm font-medium text-red-700 mb-4">
+                Mulai dari motor Anda
+              </span>
+              <h2 className="text-3xl font-bold text-gray-900 mb-3">
+                Cari rekomendasi knalpot berdasarkan make, model, tahun, dan gaya pakai
+              </h2>
+              <p className="text-gray-600 text-lg">
+                Kami sengaja menaruh jalur fitment di depan agar Anda tidak perlu menebak-nebak dari katalog umum. Setelah ini, filter material dan suara tetap tersedia sebagai langkah lanjutan.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mb-6">
+              <label className="block">
+                <span className="block text-sm font-medium text-gray-900 mb-2">Make motor</span>
+                <select
+                  value={fitmentForm.make}
+                  onChange={handleFitmentFieldChange('make')}
+                  className="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-red-500"
+                >
+                  <option value="">Pilih make</option>
+                  {makeOptions.map((make) => (
+                    <option key={make} value={make}>{make}</option>
+                  ))}
+                </select>
+              </label>
+
+              <label className="block">
+                <span className="block text-sm font-medium text-gray-900 mb-2">Model motor</span>
+                <select
+                  value={fitmentForm.model}
+                  onChange={handleFitmentFieldChange('model')}
+                  className="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-red-500"
+                  disabled={!fitmentForm.make}
+                >
+                  <option value="">Pilih model</option>
+                  {(modelOptionsByMake[fitmentForm.make] || []).map((model) => (
+                    <option key={model} value={model}>{model}</option>
+                  ))}
+                </select>
+              </label>
+
+              <label className="block">
+                <span className="block text-sm font-medium text-gray-900 mb-2">Tahun motor</span>
+                <input
+                  type="text"
+                  inputMode="numeric"
+                  maxLength={4}
+                  value={fitmentForm.year}
+                  onChange={handleFitmentFieldChange('year')}
+                  placeholder="Contoh: 2022"
+                  className="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500"
+                />
+              </label>
+
+              <label className="block">
+                <span className="block text-sm font-medium text-gray-900 mb-2">Kebutuhan utama</span>
+                <select
+                  value={fitmentForm.useCase}
+                  onChange={handleFitmentFieldChange('useCase')}
+                  className="w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-red-500"
+                >
+                  <option value="">Pilih use case</option>
+                  {useCaseOptions.map((option) => (
+                    <option key={option.value} value={option.value}>{option.label}</option>
+                  ))}
+                </select>
+              </label>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Button className="bg-red-600 hover:bg-red-700 text-white" onClick={handleFitmentSubmit}>
+                Lihat hasil fitment di katalog
+              </Button>
+              <Button
+                variant="outline"
+                className="border-red-200 text-red-600 hover:bg-red-50"
+                onClick={() => openWhatsAppCta({
+                  source: 'home_fitment_assist',
+                  userIntent: 'check_fitment',
+                  bike: {
+                    make: fitmentForm.make || null,
+                    model: fitmentForm.model || null,
+                    year: fitmentForm.year || null,
+                  },
+                  notes: fitmentForm.useCase ? `Use case: ${fitmentForm.useCase}` : 'Pengunjung butuh bantuan memilih fitment dari homepage.',
+                })}
+              >
+                Minta bantuan pilih fitment
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Features Section */}
       <section className="py-16 bg-white">
@@ -256,7 +386,7 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {blogPosts.map((post) => (
+            {blogPreview.map((post) => (
               <article key={post.id} className="group">
                 <div className="aspect-[16/10] bg-gray-200 rounded-xl mb-4 overflow-hidden">
                   <img
@@ -271,13 +401,13 @@ const Home = () => {
                 
                 <div className="space-y-3">
                   <div className="flex items-center text-sm text-gray-500 space-x-4">
-                    <span>{new Date(post.date).toLocaleDateString('id-ID')}</span>
+                    <span>{new Date(post.publishDate).toLocaleDateString('id-ID')}</span>
                     <span>•</span>
                     <span>{post.readTime} baca</span>
                   </div>
                   
                   <h3 className="text-xl font-semibold text-gray-900 group-hover:text-red-600 transition-colors line-clamp-2">
-                    <Link to={`/blog/${post.id}`}>
+                    <Link to={`/blog/${post.slug}`}>
                       {post.title}
                     </Link>
                   </h3>
@@ -287,7 +417,7 @@ const Home = () => {
                   </p>
                   
                   <Link
-                    to={`/blog/${post.id}`}
+                    to={`/blog/${post.slug}`}
                     className="inline-flex items-center text-red-600 hover:text-red-700 text-sm font-medium group"
                   >
                     Baca Selengkapnya
@@ -328,8 +458,11 @@ const Home = () => {
               size="lg"
               className="bg-white text-red-600 hover:bg-gray-100 px-8 py-3 text-lg group"
               onClick={() => {
-                const message = 'Halo Van Racing, saya ingin konsultasi untuk knalpot motor saya';
-                window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(message)}`, '_blank');
+                openWhatsAppCta({
+                  source: 'home_footer_consultation',
+                  userIntent: 'product_consultation',
+                  notes: 'CTA konsultasi utama dari footer homepage.',
+                });
               }}
             >
               <MessageCircle className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />

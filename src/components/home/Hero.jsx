@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Play, Volume2, MessageCircle, ArrowRight, Star, Users, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { openWhatsAppCta } from '@/lib/site';
+import { emitProofMediaEngagement } from '@/lib/analytics';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -50,7 +52,7 @@ const Hero = () => {
     }, 5000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [heroSlides.length]);
 
   const currentHero = heroSlides[currentSlide];
 
@@ -108,7 +110,15 @@ const Hero = () => {
                   variant="outline"
                   size="lg"
                   className="border-white/30 text-white hover:bg-white/10 px-8 py-3 text-lg group"
-                  onClick={() => setIsVideoPlaying(true)}
+                  onClick={() => {
+                    emitProofMediaEngagement({
+                      surface: 'home_hero',
+                      media_type: 'video',
+                      item_id: String(currentHero.id),
+                      item_label: currentHero.title,
+                    });
+                    setIsVideoPlaying(true);
+                  }}
                 >
                   <Play className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
                   Dengar Suara
@@ -119,7 +129,11 @@ const Hero = () => {
                 variant="outline"
                 size="lg"
                 className="border-green-500/50 text-green-400 hover:bg-green-500/10 px-8 py-3 text-lg group"
-                onClick={() => window.open('https://wa.me/6281234567890', '_blank')}
+                onClick={() => openWhatsAppCta({
+                  source: 'home_hero_custom_cta',
+                  userIntent: 'custom_build',
+                  notes: 'User datang dari hero section dan ingin custom order.',
+                })}
               >
                 <MessageCircle className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
                 Order Custom
@@ -145,7 +159,15 @@ const Hero = () => {
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
                 <div className="aspect-video bg-gray-800 rounded-xl mb-6 flex items-center justify-center group cursor-pointer"
-                     onClick={() => setIsVideoPlaying(true)}>
+                     onClick={() => {
+                       emitProofMediaEngagement({
+                         surface: 'home_hero_card',
+                         media_type: 'video',
+                         item_id: String(currentHero.id),
+                         item_label: currentHero.title,
+                       });
+                       setIsVideoPlaying(true);
+                     }}>
                   <div className="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center group-hover:bg-red-500 transition-colors">
                     <Play className="w-8 h-8 text-white ml-1" />
                   </div>

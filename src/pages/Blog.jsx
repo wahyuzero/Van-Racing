@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Calendar, Clock, User, Search, Tag, ArrowRight, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { blogPosts, blogCategories } from '../data/blog-posts';
+import { blogPosts, blogCategories, getBlogRelationSummary } from '@/content';
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -83,7 +84,9 @@ const Blog = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {featuredPosts.map((post) => (
+              {featuredPosts.map((post) => {
+                  const { relatedProducts, relatedWorkshopServices: relatedServices, hasRelations } = getBlogRelationSummary(post.id);
+                  return (
                 <div key={post.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
                   <div className="aspect-[16/10] bg-gray-200 overflow-hidden">
                     <img
@@ -134,14 +137,41 @@ const Blog = () => {
                       variant="outline"
                       size="sm"
                       className="w-full border-indigo-200 text-indigo-600 hover:bg-indigo-50"
-                      onClick={() => window.open(`/blog/${post.slug}`, '_self')}
+                      asChild
                     >
-                      Baca Selengkapnya
-                      <ArrowRight className="w-4 h-4 ml-2" />
+                      <Link to={`/blog/${post.slug}`}>
+                        Baca Selengkapnya
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Link>
                     </Button>
+
+                    {hasRelations && (
+                      <div className="mt-4 space-y-3">
+                        {relatedProducts.length > 0 && (
+                          <div className="flex flex-wrap gap-2">
+                            {relatedProducts.map((product) => (
+                              <Link key={product.id} to={`/produk/${product.id}`} className="inline-flex items-center rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700 hover:bg-indigo-100">
+                                {product.name}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+
+                        {relatedServices.length > 0 && (
+                          <div className="flex flex-wrap gap-2">
+                            {relatedServices.map((service) => (
+                              <Link key={service.id} to={`/workshop#${service.id}`} className="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-700 hover:bg-gray-100">
+                                {service.title}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
                 </div>
-              ))}
+                  );
+                })}
             </div>
           </div>
         </section>
@@ -245,7 +275,9 @@ const Blog = () => {
             {/* Blog Posts */}
             {filteredPosts.length > 0 ? (
               <div className="space-y-8">
-                {filteredPosts.map((post) => (
+                {filteredPosts.map((post) => {
+                    const { relatedProducts, relatedWorkshopServices: relatedServices, hasRelations } = getBlogRelationSummary(post.id);
+                    return (
                   <article key={post.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
                     <div className="md:flex">
                       {/* Image */}
@@ -314,16 +346,43 @@ const Blog = () => {
                             variant="outline"
                             size="sm"
                             className="border-indigo-200 text-indigo-600 hover:bg-indigo-50"
-                            onClick={() => window.open(`/blog/${post.slug}`, '_self')}
+                           asChild
                           >
-                            Baca Selengkapnya
-                            <ArrowRight className="w-4 h-4 ml-2" />
+                            <Link to={`/blog/${post.slug}`}>
+                              Baca Selengkapnya
+                              <ArrowRight className="w-4 h-4 ml-2" />
+                            </Link>
                           </Button>
                         </div>
+
+                        {hasRelations && (
+                          <div className="mt-4 pt-4 border-t border-gray-100 space-y-3">
+                            {relatedProducts.length > 0 && (
+                              <div className="flex flex-wrap gap-2">
+                                {relatedProducts.map((product) => (
+                                  <Link key={product.id} to={`/produk/${product.id}`} className="inline-flex items-center rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700 hover:bg-indigo-100">
+                                    {product.name}
+                                  </Link>
+                                ))}
+                              </div>
+                            )}
+
+                            {relatedServices.length > 0 && (
+                              <div className="flex flex-wrap gap-2">
+                                {relatedServices.map((service) => (
+                                  <Link key={service.id} to={`/workshop#${service.id}`} className="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-700 hover:bg-gray-100">
+                                    {service.title}
+                                  </Link>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        )}
                       </div>
                     </div>
                   </article>
-                ))}
+                    );
+                  })}
               </div>
             ) : (
               <div className="text-center py-12">
@@ -375,10 +434,10 @@ const Blog = () => {
               size="lg"
               variant="outline"
               className="border-white/30 text-white hover:bg-white/10 px-8"
-              onClick={() => window.open('/produk', '_self')}
-            >
-              Lihat Produk
-            </Button>
+               asChild
+             >
+               <Link to="/produk">Lihat Produk</Link>
+             </Button>
           </div>
         </div>
       </div>

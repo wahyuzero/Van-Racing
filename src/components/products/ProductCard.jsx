@@ -1,9 +1,97 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Star, Eye, MessageCircle, Volume2, Heart, ShoppingCart } from 'lucide-react';
+import { Star, Eye, MessageCircle, Volume2, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { openWhatsAppCta } from '@/lib/site';
 
 const ProductCard = ({ product, showFullDetails = false }) => {
+  const normalizedStatus = product?.availabilityState?.status;
+
+  const getAvailabilityConfig = () => {
+    switch (normalizedStatus) {
+      case 'ready_stock':
+      case 'available':
+        return {
+          status: 'ready_stock',
+          badge: 'Ready Stock',
+          badgeClassName: 'bg-green-100 text-green-800 border-green-200',
+          helper: 'Siap diproses setelah konfirmasi via WhatsApp.',
+          ctaLabel: 'Order WA',
+          ctaDisabled: false,
+          ctaMode: 'order',
+          overlay: null,
+        };
+      case 'pre_order':
+        return {
+          status: 'pre_order',
+          badge: 'Pre-order',
+          badgeClassName: 'bg-amber-100 text-amber-800 border-amber-200',
+          helper: 'Produksi dijadwalkan setelah deal spesifikasi dan antrean.',
+          ctaLabel: 'Tanya Pre-order',
+          ctaDisabled: false,
+          ctaMode: 'consult',
+          overlay: null,
+        };
+      case 'made_by_request':
+        return {
+          status: 'made_by_request',
+          badge: 'Made by Request',
+          badgeClassName: 'bg-purple-100 text-purple-800 border-purple-200',
+          helper: 'Dibuat sesuai kebutuhan setup, material, dan karakter suara.',
+          ctaLabel: 'Konsultasi Build',
+          ctaDisabled: false,
+          ctaMode: 'consult',
+          overlay: null,
+        };
+      case 'workshop_only':
+        return {
+          status: 'workshop_only',
+          badge: 'Workshop Only',
+          badgeClassName: 'bg-slate-100 text-slate-800 border-slate-300',
+          helper: 'Pengecekan dan pemasangan dilakukan lewat workshop agar hasilnya tepat.',
+          ctaLabel: 'Atur Kunjungan',
+          ctaDisabled: false,
+          ctaMode: 'workshop',
+          overlay: 'Workshop Only',
+        };
+      case 'unknown':
+        return {
+          status: 'unknown',
+          badge: 'Unknown',
+          badgeClassName: 'bg-gray-100 text-gray-700 border-gray-300',
+          helper: 'Status terbaru perlu dicek manual dengan tim sebelum diarahkan ke opsi terbaik.',
+          ctaLabel: 'Hubungi Tim',
+          ctaDisabled: false,
+          ctaMode: 'contact',
+          overlay: 'Cek via Tim',
+        };
+      default:
+        return product?.inStock
+          ? {
+              status: 'ready_stock',
+              badge: 'Ready Stock',
+              badgeClassName: 'bg-green-100 text-green-800 border-green-200',
+              helper: 'Siap diproses setelah konfirmasi via WhatsApp.',
+              ctaLabel: 'Order WA',
+              ctaDisabled: false,
+              ctaMode: 'order',
+              overlay: null,
+            }
+          : {
+              status: 'unknown',
+              badge: 'Unknown',
+              badgeClassName: 'bg-gray-100 text-gray-700 border-gray-300',
+              helper: 'Status terbaru perlu dicek manual dengan tim sebelum diarahkan ke opsi terbaik.',
+              ctaLabel: 'Hubungi Tim',
+              ctaDisabled: false,
+              ctaMode: 'contact',
+              overlay: 'Cek via Tim',
+            };
+    }
+  };
+
+  const availability = getAvailabilityConfig();
+
   const formatPrice = (price) => {
     return new Intl.NumberFormat('id-ID', {
       style: 'currency',
@@ -62,8 +150,23 @@ const ProductCard = ({ product, showFullDetails = false }) => {
     : 5;
 
   const handleWhatsAppOrder = () => {
-    const message = `Halo Van Racing, saya tertarik dengan ${product.name}. Bisa info lebih lanjut?`;
-    window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(message)}`, '_blank');
+    const intentByMode = {
+      order: 'order_product',
+      consult: 'product_consultation',
+      workshop: 'workshop_booking',
+      contact: 'contact_support',
+    };
+
+    openWhatsAppCta({
+      source: showFullDetails ? 'products_list_detail_cta' : 'products_grid_card_cta',
+      userIntent: intentByMode[availability.ctaMode] || 'product_consultation',
+      product,
+      availability: {
+        status: availability.status,
+        label: availability.badge,
+      },
+      notes: availability.helper,
+    });
   };
 
   return (
@@ -93,6 +196,9 @@ const ProductCard = ({ product, showFullDetails = false }) => {
               UNGGULAN
             </span>
           )}
+          <span className={`px-2 py-1 rounded-md text-xs font-medium border ${availability.badgeClassName}`}>
+            {availability.badge}
+          </span>
           <span className={`px-2 py-1 rounded-md text-xs font-medium border ${getSoundBadgeColor(product.soundType)}`}>
             {getSoundLabel(product.soundType)}
           </span>
@@ -130,10 +236,10 @@ const ProductCard = ({ product, showFullDetails = false }) => {
         </div>
 
         {/* Stock Status */}
-        {!product.inStock && (
+        {availability.overlay && (
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-            <span className="bg-red-600 text-white px-4 py-2 rounded-lg font-medium">
-              Stok Habis
+            <span className="bg-slate-900/90 text-white px-4 py-2 rounded-lg font-medium">
+              {availability.overlay}
             </span>
           </div>
         )}
@@ -166,6 +272,8 @@ const ProductCard = ({ product, showFullDetails = false }) => {
               {averageRating.toFixed(1)} ({product.reviews.length} review)
             </span>
           </div>
+
+          <p className="text-sm text-gray-600 mb-3">{availability.helper}</p>
 
           {/* Category & Material */}
           <div className="flex items-center gap-2 mb-3">
@@ -232,14 +340,14 @@ const ProductCard = ({ product, showFullDetails = false }) => {
           <Button
             className="flex-1 bg-red-600 hover:bg-red-700 text-white disabled:bg-gray-400"
             onClick={handleWhatsAppOrder}
-            disabled={!product.inStock}
+            disabled={availability.ctaDisabled}
           >
             <MessageCircle className="w-4 h-4 mr-2" />
-            {product.inStock ? 'Order WA' : 'Stok Habis'}
+            {availability.ctaLabel}
           </Button>
           <Button
             variant="outline"
-            className="px-4 border-red-200 text-red-600 hover:bg-red-50"
+            className={`px-4 ${availability.status === 'workshop_only' || availability.status === 'unknown' ? 'border-gray-300 text-gray-700 hover:bg-gray-50' : 'border-red-200 text-red-600 hover:bg-red-50'}`}
             asChild
           >
             <Link to={`/produk/${product.id}`}>

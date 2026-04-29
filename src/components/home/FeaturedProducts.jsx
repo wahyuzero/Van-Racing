@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Star, Eye, MessageCircle, ArrowRight, Volume2, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { products } from '../../data/products';
+import { openWhatsAppCta } from '@/lib/site';
 
 const FeaturedProducts = () => {
   const featuredProducts = products.filter(product => product.featured);
@@ -177,8 +178,12 @@ const FeaturedProducts = () => {
                   <Button
                     className="flex-1 bg-red-600 hover:bg-red-700 text-white"
                     onClick={() => {
-                      const message = `Halo, saya tertarik dengan ${product.name}. Bisa info lebih lanjut?`;
-                      window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(message)}`, '_blank');
+                      openWhatsAppCta({
+                        source: 'home_featured_products',
+                        userIntent: 'product_consultation',
+                        product,
+                        notes: 'CTA dari blok produk unggulan di homepage.',
+                      });
                     }}
                   >
                     <MessageCircle className="w-4 h-4 mr-2" />

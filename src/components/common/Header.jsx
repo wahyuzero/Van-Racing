@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, MessageCircle, Search, ShoppingCart } from 'lucide-react';
+import { Menu, X, Phone, MessageCircle, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
@@ -25,6 +25,7 @@ const Header = () => {
     { name: 'Testimoni', href: '/testimoni' },
     { name: 'Blog', href: '/blog' },
     { name: 'Galeri', href: '/galeri' },
+    { name: 'Garansi & Keaslian', href: '/kontak#garansi-keaslian' },
     { name: 'Kontak', href: '/kontak' }
   ];
 
@@ -210,7 +211,7 @@ function ProcessedImage({ src, alt = '', className = '', tolerance = 30 }) {
         ctx.putImageData(imgData, 0, 0);
         const url = canvas.toDataURL('image/png');
         if (isMounted.current) setDataUrl(url);
-      } catch (e) {
+      } catch {
         // if CORS or other error, fall back to original src
         if (isMounted.current) setDataUrl(src);
       }

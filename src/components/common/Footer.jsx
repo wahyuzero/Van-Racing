@@ -22,6 +22,7 @@ const Footer = () => {
     { name: 'Tentang Kami', href: '/tentang' },
     { name: 'Produk', href: '/produk' },
     { name: 'Workshop & Custom', href: '/workshop' },
+    { name: 'Garansi & Keaslian', href: '/kontak#garansi-keaslian' },
     { name: 'Cara Order', href: '/cara-order' },
     { name: 'FAQ', href: '/faq' },
     { name: 'Testimoni', href: '/testimoni' }
@@ -49,8 +50,8 @@ const Footer = () => {
     },
     {
       icon: Shield,
-      title: 'Garansi Resmi',
-      description: 'Garansi hingga 1 tahun'
+      title: 'Garansi Jelas',
+      description: 'Panduan klaim manual lewat tim Van Racing'
     },
     {
       icon: Truck,
@@ -122,6 +123,18 @@ const Footer = () => {
                 <span className="text-sm text-gray-400">
                   Senin - Sabtu: 08:00 - 17:00 WIB
                 </span>
+              </div>
+              <div className="rounded-xl bg-gray-800/80 p-4">
+                <p className="text-sm font-semibold text-white">Butuh cek garansi atau keaslian produk?</p>
+                <p className="mt-2 text-sm text-gray-300">
+                  Kami belum menyediakan verifikasi serial otomatis. Tim akan bantu cek manual melalui riwayat pembelian, foto produk, dan channel pembelian Anda.
+                </p>
+                <Link
+                  to="/kontak#garansi-keaslian"
+                  className="mt-3 inline-flex text-sm font-medium text-red-400 transition-colors hover:text-red-300"
+                >
+                  Lihat panduan garansi & keaslian
+                </Link>
               </div>
             </div>
           </div>

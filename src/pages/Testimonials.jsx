@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { Star, Play, Filter, Users, MapPin, Calendar, CheckCircle, Quote } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { testimonials, testimonialStats } from '../data/testimonials';
+import { Link } from 'react-router-dom';
+import { testimonials } from '@/content';
+import { testimonialStats } from '../data/testimonials';
+import { getTestimonialRelationSummary } from '@/content';
 
 const Testimonials = () => {
   const [selectedRating, setSelectedRating] = useState('all');
@@ -66,7 +69,7 @@ const Testimonials = () => {
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
                 <div className="text-2xl font-bold">{testimonials.filter(t => t.verified).length}</div>
-                <div className="text-sm text-yellow-100">Pembelian Terverifikasi</div>
+                <div className="text-sm text-yellow-100">Review dengan data tim</div>
               </div>
             </div>
           </div>
@@ -182,7 +185,9 @@ const Testimonials = () => {
             {/* Testimonials Grid */}
             {filteredTestimonials.length > 0 ? (
               <div className="space-y-6">
-                {filteredTestimonials.map((testimonial) => (
+                {filteredTestimonials.map((testimonial) => {
+                    const { relatedProducts, relatedWorkshopServices: relatedServices, hasRelations } = getTestimonialRelationSummary(testimonial.id);
+                    return (
                   <div key={testimonial.id} className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow">
                     <div className="flex flex-col md:flex-row gap-6">
                       {/* Customer Image */}
@@ -209,7 +214,7 @@ const Testimonials = () => {
                               {testimonial.verified && (
                                 <span className="inline-flex items-center px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">
                                   <CheckCircle className="w-3 h-3 mr-1" />
-                                  Verified
+                                  Data review tim
                                 </span>
                               )}
                             </div>
@@ -268,10 +273,41 @@ const Testimonials = () => {
                             </Button>
                           </div>
                         )}
+
+                        {hasRelations && (
+                          <div className="mt-5 pt-4 border-t border-gray-100 space-y-3">
+                            {relatedProducts.length > 0 && (
+                              <div>
+                                <div className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-2">Lihat produk terkait</div>
+                                <div className="flex flex-wrap gap-2">
+                                  {relatedProducts.map((product) => (
+                                    <Link key={product.id} to={`/produk/${product.id}`} className="inline-flex items-center rounded-full border border-red-200 bg-red-50 px-3 py-1 text-xs font-medium text-red-700 hover:bg-red-100">
+                                      {product.name}
+                                    </Link>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+
+                            {relatedServices.length > 0 && (
+                              <div>
+                                <div className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-2">Butuh layanan workshop terkait?</div>
+                                <div className="flex flex-wrap gap-2">
+                                  {relatedServices.map((service) => (
+                                    <Link key={service.id} to={`/workshop#${service.id}`} className="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-700 hover:bg-gray-100">
+                                      {service.title}
+                                    </Link>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>
-                ))}
+                    );
+                  })}
               </div>
             ) : (
               <div className="text-center py-12">

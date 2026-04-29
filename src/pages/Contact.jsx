@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SEO from '../components/common/SEO';
-import { 
+import {
   MapPin, 
   Phone, 
   Mail, 
@@ -14,9 +14,13 @@ import {
   Navigation,
   Car,
   Bike,
-  Users
+   Users,
+   ShieldCheck,
+   FileCheck,
+   AlertCircle
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { buildWhatsAppUrl, openWhatsAppCta } from '@/lib/site';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -30,6 +34,16 @@ const Contact = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
+
+  const workshopReservationUrl = buildWhatsAppUrl({
+    source: 'contact_info_workshop_reservation',
+    userIntent: 'workshop_booking',
+    availability: {
+      status: 'workshop_only',
+      label: 'Workshop Reservation',
+    },
+    notes: 'Reservasi kunjungan workshop dari kartu info kontak.',
+  }).url;
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -47,10 +61,25 @@ const Contact = () => {
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitStatus('success');
-      
-      // Send to WhatsApp
-      const message = `Halo Van Racing, saya ${formData.name} ingin ${formData.subject}.\n\nDetail:\n- Motor: ${formData.motor}\n- Email: ${formData.email}\n- Phone: ${formData.phone}\n- Pesan: ${formData.message}`;
-      window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(message)}`, '_blank');
+
+      openWhatsAppCta({
+        source: 'contact_form_submission',
+        userIntent: formData.subject === 'reservasi workshop'
+          ? 'workshop_booking'
+          : formData.subject === 'custom order'
+            ? 'custom_build'
+            : formData.subject === 'informasi produk'
+              ? 'product_consultation'
+              : 'contact_support',
+        bike: formData.motor || null,
+        customer: {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        },
+        notes: `Subjek kontak: ${formData.subject}`,
+      });
       
       // Reset form
       setFormData({
@@ -107,7 +136,7 @@ const Contact = () => {
         'Minggu: Tutup'
       ],
       action: 'Reservasi',
-      actionUrl: 'https://wa.me/6281234567890?text=Halo%20Van Racing%2C%20saya%20ingin%20reservasi%20kunjungan%20workshop'
+      actionUrl: workshopReservationUrl
     }
   ];
 
@@ -160,6 +189,24 @@ const Contact = () => {
       url: 'https://wa.me/6281234567890?text=Halo%20Van Racing%2C%20saya%20ingin%20order%20custom%20knalpot',
       color: 'bg-purple-500 hover:bg-purple-600'
     }
+  ];
+
+  const trustSteps = [
+    {
+      icon: ShieldCheck,
+      title: 'Cek channel pembelian',
+      description: 'Utamakan pembelian dari workshop, admin resmi, atau arahan langsung tim Van Racing. Jika Anda beli dari pihak lain, kami akan bantu cek manual lebih dulu.',
+    },
+    {
+      icon: FileCheck,
+      title: 'Siapkan bukti pendukung',
+      description: 'Foto produk, detail motor, video singkat bila perlu, dan bukti transaksi akan mempercepat pengecekan garansi atau keaslian.',
+    },
+    {
+      icon: AlertCircle,
+      title: 'Terima arahan manual',
+      description: 'Saat ini belum ada sistem serial checker otomatis. Tim kami akan memberi jawaban manual, termasuk langkah klaim, inspeksi workshop, atau tindak lanjut WhatsApp.',
+    },
   ];
 
   return (
@@ -227,12 +274,115 @@ const Contact = () => {
                 <p className="text-gray-600 mb-6">{action.description}</p>
                 <Button
                   className={`${action.color} text-white px-6`}
-                  onClick={() => window.open(action.url, '_blank')}
+                  onClick={() => {
+                    if (action.title === 'Konsultasi Gratis') {
+                      openWhatsAppCta({
+                        source: 'contact_quick_action_consultation',
+                        userIntent: 'product_consultation',
+                        notes: action.description,
+                      });
+                      return;
+                    }
+
+                    if (action.title === 'Custom Order') {
+                      openWhatsAppCta({
+                        source: 'contact_quick_action_custom',
+                        userIntent: 'custom_build',
+                        availability: {
+                          status: 'made_by_request',
+                          label: 'Custom Build',
+                        },
+                        notes: action.description,
+                      });
+                      return;
+                    }
+
+                    window.open(action.url, '_blank');
+                  }}
                 >
                   {action.action}
                 </Button>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="garansi-keaslian" className="py-16 bg-slate-50 scroll-mt-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+              Garansi & keaslian
+            </p>
+            <h2 className="mt-3 text-3xl font-bold text-slate-900">
+              Panduan trust yang jujur, tanpa klaim verifikasi otomatis
+            </h2>
+            <p className="mt-4 text-lg text-slate-700">
+              Kalau Anda perlu cek keaslian produk Van Racing atau ingin menanyakan langkah klaim garansi, prosesnya masih dibantu manual oleh tim kami. Kami sengaja tidak menampilkan hasil verifikasi instan bila alurnya memang belum ada.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-6 lg:grid-cols-[1.3fr_0.9fr]">
+            <div className="rounded-3xl bg-white p-8 shadow-lg">
+              <h3 className="text-xl font-semibold text-slate-900">Apa yang bisa kami bantu saat ini</h3>
+              <div className="mt-6 grid gap-4 md:grid-cols-3">
+                {trustSteps.map((step) => (
+                  <div key={step.title} className="rounded-2xl bg-slate-50 p-5">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-900 text-white">
+                      <step.icon className="h-5 w-5" />
+                    </div>
+                    <h4 className="mt-4 text-base font-semibold text-slate-900">{step.title}</h4>
+                    <p className="mt-2 text-sm leading-6 text-slate-700">{step.description}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-6 rounded-2xl bg-amber-50 p-5">
+                <h4 className="text-base font-semibold text-amber-900">Jika status produk atau registrasi belum bisa dicek</h4>
+                <p className="mt-2 text-sm leading-6 text-amber-800">
+                  Kami akan arahkan Anda ke kontak manual, bukan ke halaman sukses palsu. Kirim detail motor, channel pembelian, foto produk, dan keluhan singkat agar tim bisa memberi jawaban yang lebih akurat.
+                </p>
+              </div>
+            </div>
+
+            <div className="rounded-3xl bg-slate-900 p-8 text-white shadow-lg">
+              <h3 className="text-xl font-semibold">Mulai pengecekan manual</h3>
+              <p className="mt-3 text-sm leading-6 text-slate-300">
+                Jalur tercepat untuk garansi dan keaslian saat ini adalah WhatsApp. Tim akan memeriksa informasi yang Anda kirim lalu mengarahkan apakah cukup lewat chat atau perlu datang ke workshop.
+              </p>
+
+              <ul className="mt-6 space-y-3 text-sm text-slate-200">
+                <li>• Foto produk dari beberapa sisi</li>
+                <li>• Bukti transaksi atau chat pembelian</li>
+                <li>• Tipe motor dan keluhan singkat</li>
+                <li>• Lokasi Anda, jika kemungkinan perlu inspeksi workshop</li>
+              </ul>
+
+              <div className="mt-8 space-y-3">
+                <Button
+                  className="w-full bg-white text-slate-900 hover:bg-slate-100"
+                  onClick={() => {
+                    openWhatsAppCta({
+                      source: 'contact_trust_manual_verification',
+                      userIntent: 'contact_support',
+                      notes: 'Butuh bantuan garansi atau cek keaslian manual. Saya siap kirim foto produk dan bukti transaksi.',
+                    });
+                  }}
+                >
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  Chat Garansi & Keaslian
+                </Button>
+
+                <Button
+                  variant="outline"
+                  className="w-full border-white/30 text-white hover:bg-white/10"
+                  onClick={() => window.open('tel:+6281234567890', '_self')}
+                >
+                  <Phone className="mr-2 h-5 w-5" />
+                  Telepon Tim Support
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -248,7 +398,7 @@ const Contact = () => {
             {submitStatus === 'success' && (
               <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center">
                 <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                <span className="text-green-700">Pesan berhasil dikirim! Kami akan segera menghubungi Anda.</span>
+                <span className="text-green-700">Detail Anda sudah kami siapkan ke WhatsApp. Tim akan lanjut membantu lewat jalur manual yang paling sesuai.</span>
               </div>
             )}
 
@@ -466,8 +616,11 @@ const Contact = () => {
               size="lg"
               className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 text-lg group"
               onClick={() => {
-                const message = 'Halo Van Racing, saya memiliki pertanyaan dan ingin berbicara dengan customer service';
-                window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(message)}`, '_blank');
+                openWhatsAppCta({
+                  source: 'contact_footer_customer_service',
+                  userIntent: 'customer_service',
+                  notes: 'CTA customer service dari footer halaman kontak.',
+                });
               }}
             >
               <MessageCircle className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />

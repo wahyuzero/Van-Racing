@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Search, Filter, Calendar, Tag, Eye, Download, Share2, Camera } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { galleryItems, galleryCategories, featuredGallery } from '../data/gallery';
+import { Link } from 'react-router-dom';
+import { galleryItems, galleryCategories, featuredGallery, getGalleryRelationSummary } from '@/content';
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -253,7 +254,9 @@ const Gallery = () => {
             {/* Gallery Grid */}
             {filteredItems.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredItems.map((item) => (
+                {filteredItems.map((item) => {
+                    const { relatedProducts, relatedWorkshopServices: relatedServices, hasRelations } = getGalleryRelationSummary(item.id);
+                    return (
                   <div key={item.id} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow bg-white">
                     <div className="aspect-[4/3] bg-gray-200 overflow-hidden">
                       <img
@@ -322,9 +325,34 @@ const Gallery = () => {
                           <span className="text-xs text-gray-500">+{item.tags.length - 2}</span>
                         )}
                       </div>
+
+                      {hasRelations && (
+                        <div className="mt-4 pt-3 border-t border-gray-100 space-y-3">
+                          {relatedProducts.length > 0 && (
+                            <div className="flex flex-wrap gap-2">
+                              {relatedProducts.map((product) => (
+                                <Link key={product.id} to={`/produk/${product.id}`} className="inline-flex items-center rounded-full border border-purple-200 bg-purple-50 px-2.5 py-1 text-[11px] font-medium text-purple-700 hover:bg-purple-100">
+                                  {product.name}
+                                </Link>
+                              ))}
+                            </div>
+                          )}
+
+                          {relatedServices.length > 0 && (
+                            <div className="flex flex-wrap gap-2">
+                              {relatedServices.map((service) => (
+                                <Link key={service.id} to={`/workshop#${service.id}`} className="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-2.5 py-1 text-[11px] font-medium text-gray-700 hover:bg-gray-100">
+                                  {service.title}
+                                </Link>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      )}
                     </div>
                   </div>
-                ))}
+                    );
+                  })}
               </div>
             ) : (
               <div className="text-center py-12">

@@ -9,18 +9,27 @@ const SEO = ({
   url, 
   type = 'website',
   article = null,
-  product = null,
-  organization = null
+  product = null
 }) => {
   const siteTitle = 'Van Racing Exhaust Indonesia';
   const siteDescription = 'Knalpot Custom & Racing Motor Berkualitas Premium - Van Racing Exhaust Indonesia. Full System, Slip On, Custom Order dengan Garansi Resmi.';
-  const siteUrl = 'van-racing.co.id';
+  const siteUrl = 'https://van-racing.co.id';
   const defaultImage = `${siteUrl}/images/og-image.jpg`;
+
+  const normalizeAbsoluteUrl = (value, fallback = siteUrl) => {
+    if (!value) return fallback;
+
+    if (/^https?:\/\//i.test(value)) {
+      return value;
+    }
+
+    return `${siteUrl}${value.startsWith('/') ? value : `/${value}`}`;
+  };
 
   const fullTitle = title ? `${title} | ${siteTitle}` : siteTitle;
   const fullDescription = description || siteDescription;
-  const fullImage = image || defaultImage;
-  const fullUrl = url ? `${siteUrl}${url}` : siteUrl;
+  const fullImage = normalizeAbsoluteUrl(image, defaultImage);
+  const fullUrl = normalizeAbsoluteUrl(url, siteUrl);
 
   // Generate JSON-LD structured data
   const generateStructuredData = () => {
