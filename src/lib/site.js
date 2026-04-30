@@ -44,17 +44,17 @@ export function buildWhatsAppMessage(metadata = {}) {
   const normalized = normalizeMetadata(metadata);
 
   const introByIntent = {
-    order_product: 'Halo Van Racing, saya ingin order produk berikut.',
-    product_consultation: 'Halo Van Racing, saya ingin konsultasi soal produk berikut.',
-    check_fitment: 'Halo Van Racing, saya ingin cek kecocokan produk untuk motor saya.',
-    workshop_booking: 'Halo Van Racing, saya ingin reservasi workshop.',
-    custom_build: 'Halo Van Racing, saya ingin konsultasi custom build knalpot.',
-    customer_service: 'Halo Van Racing, saya ingin berbicara dengan customer service.',
-    contact_support: 'Halo Van Racing, saya ingin menghubungi tim Van Racing.',
+    order_product: 'Halo WaHyu_Racing, saya ingin order produk berikut.',
+    product_consultation: 'Halo WaHyu_Racing, saya ingin konsultasi soal produk berikut.',
+    check_fitment: 'Halo WaHyu_Racing, saya ingin cek kecocokan produk untuk motor saya.',
+    workshop_booking: 'Halo WaHyu_Racing, saya ingin reservasi workshop.',
+    custom_build: 'Halo WaHyu_Racing, saya ingin konsultasi custom build knalpot.',
+    customer_service: 'Halo WaHyu_Racing, saya ingin berbicara dengan customer service.',
+    contact_support: 'Halo WaHyu_Racing, saya ingin menghubungi tim WaHyu_Racing.',
   };
 
   const messageSections = [
-    introByIntent[normalized.userIntent] || 'Halo Van Racing, saya ingin konsultasi lebih lanjut.',
+    introByIntent[normalized.userIntent] || 'Halo WaHyu_Racing, saya ingin konsultasi lebih lanjut.',
     '',
     'Ringkasan permintaan:',
     `- Source: ${normalized.source}`,

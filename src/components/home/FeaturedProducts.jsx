@@ -54,7 +54,7 @@ const FeaturedProducts = () => {
             <span className="text-red-600 font-medium text-sm">Produk Unggulan</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Knalpot Terlaris Van Racing
+            Knalpot Terlaris WaHyu_Racing
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Pilihan terbaik dari ribuan bikers Indonesia. Kualitas premium dengan suara khas yang mantap.

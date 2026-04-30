@@ -50,7 +50,7 @@ const Testimonials = () => {
               Testimoni Customer
             </h1>
             <p className="text-xl text-yellow-100 max-w-3xl mx-auto mb-8">
-              Kepuasan customer adalah prioritas utama kami. Lihat apa kata mereka tentang produk dan layanan Van Racing.
+              Kepuasan customer adalah prioritas utama kami. Lihat apa kata mereka tentang produk dan layanan WaHyu_Racing.
             </p>
             
             {/* Quick Stats */}
@@ -351,7 +351,7 @@ const Testimonials = () => {
             Bergabunglah dengan Customer yang Puas
           </h3>
           <p className="text-yellow-100 mb-6 max-w-2xl mx-auto">
-            Lebih dari 1000 customer telah merasakan kualitas dan pelayanan terbaik Van Racing. 
+            Lebih dari 1000 customer telah merasakan kualitas dan pelayanan terbaik WaHyu_Racing. 
             Saatnya giliran Anda merasakan pengalaman yang sama!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -367,7 +367,7 @@ const Testimonials = () => {
               variant="outline"
               className="border-white/30 text-white hover:bg-white/10 px-8"
               onClick={() => {
-                const message = 'Halo Van Racing, saya tertarik dengan produk Anda setelah melihat testimoni customer';
+                const message = 'Halo WaHyu_Racing, saya tertarik dengan produk Anda setelah melihat testimoni customer';
                 window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(message)}`, '_blank');
               }}
             >

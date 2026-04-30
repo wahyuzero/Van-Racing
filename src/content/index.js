@@ -7,7 +7,7 @@ import { workshopServices } from '@/data/workshop';
 const normalize = (value) =>
   String(value || '')
     .toLowerCase()
-    .replace(/van racing|jvouse/g, ' ')
+    .replace(/wahyu racing|wahyu_racing/g, ' ')
     .replace(/[^a-z0-9]+/g, ' ')
     .trim();
 

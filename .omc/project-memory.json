@@ -1,0 +1,204 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1777524251134,
+  "projectRoot": "/home/wxsys/Project/Van-Racing",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "jsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "react",
+        "version": "19.1.0",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "19.1.0",
+        "category": "frontend"
+      },
+      {
+        "name": "vite",
+        "version": "6.3.5",
+        "category": "build"
+      }
+    ],
+    "packageManager": "pnpm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "pnpm run build 2>&1 | tail -10",
+    "testCommand": null,
+    "lintCommand": "pnpm lint",
+    "devCommand": "pnpm dev",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "lint": "eslint .",
+      "preview": "vite preview"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "public",
+      "src"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "dist": {
+      "path": "dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 16,
+      "lastAccessed": 1777524251105,
+      "keyFiles": [
+        "1.jpeg",
+        "2.jpeg",
+        "3.jpeg",
+        "4.jpeg",
+        "404.html"
+      ]
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 15,
+      "lastAccessed": 1777524251107,
+      "keyFiles": [
+        "1.jpeg",
+        "2.jpeg",
+        "3.jpeg",
+        "4.jpeg",
+        "404.html"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 4,
+      "lastAccessed": 1777524251119,
+      "keyFiles": [
+        "App.css",
+        "App.jsx",
+        "index.css",
+        "main.jsx"
+      ]
+    },
+    "src/assets": {
+      "path": "src/assets",
+      "purpose": "Static assets",
+      "fileCount": 1,
+      "lastAccessed": 1777524251122,
+      "keyFiles": [
+        "react.svg"
+      ]
+    },
+    "src/components": {
+      "path": "src/components",
+      "purpose": "UI components",
+      "fileCount": 0,
+      "lastAccessed": 1777524251123,
+      "keyFiles": []
+    },
+    "src/data": {
+      "path": "src/data",
+      "purpose": "Data files",
+      "fileCount": 6,
+      "lastAccessed": 1777524251123,
+      "keyFiles": [
+        "blog-posts.js",
+        "faq.js",
+        "gallery.js"
+      ]
+    },
+    "src/lib": {
+      "path": "src/lib",
+      "purpose": "Library code",
+      "fileCount": 4,
+      "lastAccessed": 1777524251128,
+      "keyFiles": [
+        "analytics.js",
+        "products.js",
+        "site.js"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src/components/common/Header.jsx",
+      "accessCount": 34,
+      "lastAccessed": 1777527200450,
+      "type": "file"
+    },
+    {
+      "path": "src/App.jsx",
+      "accessCount": 4,
+      "lastAccessed": 1777525955714,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/About.jsx",
+      "accessCount": 3,
+      "lastAccessed": 1777527286559,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 1,
+      "lastAccessed": 1777524463514,
+      "type": "file"
+    },
+    {
+      "path": "src/main.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1777524479501,
+      "type": "file"
+    },
+    {
+      "path": "src/index.css",
+      "accessCount": 1,
+      "lastAccessed": 1777525955806,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/Home.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1777526504286,
+      "type": "file"
+    },
+    {
+      "path": "src/components/home/Hero.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1777526504462,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

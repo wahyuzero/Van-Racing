@@ -1,7 +1,7 @@
 export const products = [
   {
     id: "fs-r25-stainless",
-    name: "Knalpot Full System R25 Stainless Van Racing",
+    name: "Knalpot Full System R25 Stainless WaHyu_Racing",
     category: "full-system",
     price: 1250000,
     originalPrice: 1500000,
@@ -66,7 +66,7 @@ export const products = [
   },
   {
     id: "so-cbr150-carbon",
-    name: "Knalpot Slip On CBR150R Carbon Look Van Racing",
+    name: "Knalpot Slip On CBR150R Carbon Look WaHyu_Racing",
     category: "slip-on",
     price: 850000,
     originalPrice: 1000000,
@@ -122,7 +122,7 @@ export const products = [
   },
   {
     id: "fs-ninja250-titanium",
-    name: "Knalpot Full System Ninja 250 Titanium Look Van Racing",
+    name: "Knalpot Full System Ninja 250 Titanium Look WaHyu_Racing",
     category: "full-system",
     price: 1450000,
     originalPrice: 1700000,
@@ -179,7 +179,7 @@ export const products = [
   },
   {
     id: "so-vixion-stainless",
-    name: "Knalpot Slip On Vixion Stainless Van Racing",
+    name: "Knalpot Slip On Vixion Stainless WaHyu_Racing",
     category: "slip-on",
     price: 650000,
     originalPrice: 750000,
@@ -226,7 +226,7 @@ export const products = [
   },
   {
     id: "custom-order",
-    name: "Knalpot Custom Order Van Racing",
+    name: "Knalpot Custom Order WaHyu_Racing",
     category: "custom",
     price: 0,
     originalPrice: 0,

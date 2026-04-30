@@ -45,10 +45,10 @@ const Blog = () => {
               <BookOpen className="w-8 h-8" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Blog Van Racing
+              Blog WaHyu_Racing
             </h1>
             <p className="text-xl text-indigo-100 max-w-3xl mx-auto mb-8">
-              Tips, panduan, dan insight terbaru seputar dunia knalpot motor dari para ahli Van Racing
+              Tips, panduan, dan insight terbaru seputar dunia knalpot motor dari para ahli WaHyu_Racing
             </p>
             
             {/* Quick Stats */}
@@ -79,7 +79,7 @@ const Blog = () => {
                 Artikel Pilihan
               </h2>
               <p className="text-lg text-gray-600">
-                Artikel terpopuler dan paling bermanfaat dari tim Van Racing
+                Artikel terpopuler dan paling bermanfaat dari tim WaHyu_Racing
               </p>
             </div>
 
@@ -238,7 +238,7 @@ const Blog = () => {
 
               {/* Newsletter */}
               <div className="p-4 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl">
-                <h4 className="font-semibold text-gray-900 mb-2">Newsletter Van Racing</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">Newsletter WaHyu_Racing</h4>
                 <p className="text-sm text-gray-600 mb-4">
                   Dapatkan tips dan update terbaru langsung ke email Anda
                 </p>
@@ -246,7 +246,7 @@ const Blog = () => {
                   size="sm"
                   className="w-full bg-indigo-600 hover:bg-indigo-700 text-xs"
                   onClick={() => {
-                    const message = 'Halo Van Racing, saya ingin berlangganan newsletter untuk mendapatkan tips dan update terbaru';
+                    const message = 'Halo WaHyu_Racing, saya ingin berlangganan newsletter untuk mendapatkan tips dan update terbaru';
                     window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(message)}`, '_blank');
                   }}
                 >
@@ -416,7 +416,7 @@ const Blog = () => {
             Punya Pertanyaan Seputar Knalpot?
           </h3>
           <p className="text-indigo-100 mb-6 max-w-2xl mx-auto">
-            Tim ahli Van Racing siap membantu Anda dengan konsultasi gratis. 
+            Tim ahli WaHyu_Racing siap membantu Anda dengan konsultasi gratis. 
             Dapatkan rekomendasi knalpot yang tepat sesuai motor dan kebutuhan Anda.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -424,7 +424,7 @@ const Blog = () => {
               size="lg"
               className="bg-white text-indigo-600 hover:bg-gray-100 px-8"
               onClick={() => {
-                const message = 'Halo Van Racing, saya ingin konsultasi seputar knalpot motor setelah membaca artikel di blog';
+                const message = 'Halo WaHyu_Racing, saya ingin konsultasi seputar knalpot motor setelah membaca artikel di blog';
                 window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(message)}`, '_blank');
               }}
             >

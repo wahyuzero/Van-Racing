@@ -11,8 +11,8 @@ const SEO = ({
   article = null,
   product = null
 }) => {
-  const siteTitle = 'Van Racing Exhaust Indonesia';
-  const siteDescription = 'Knalpot Custom & Racing Motor Berkualitas Premium - Van Racing Exhaust Indonesia. Full System, Slip On, Custom Order dengan Garansi Resmi.';
+  const siteTitle = 'WaHyu_Racing Exhaust Indonesia';
+  const siteDescription = 'Knalpot Custom & Racing Motor Berkualitas Premium - WaHyu_Racing Exhaust Indonesia. Full System, Slip On, Custom Order dengan Garansi Resmi.';
   const siteUrl = 'https://van-racing.co.id';
   const defaultImage = `${siteUrl}/images/og-image.jpg`;
 
@@ -36,8 +36,8 @@ const SEO = ({
     const baseOrganization = {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Van Racing Exhaust Indonesia",
-      "alternateName": "Van Racing",
+      "name": "WaHyu_Racing Exhaust Indonesia",
+      "alternateName": "WaHyu_Racing",
       "url": siteUrl,
       "logo": `${siteUrl}/images/logo.png`,
       "description": siteDescription,
@@ -63,9 +63,9 @@ const SEO = ({
         "availableLanguage": "Indonesian"
       },
       "sameAs": [
-        "https://www.instagram.com/Van Racingexhaust",
-        "https://www.facebook.com/Van Racingexhaust",
-        "https://www.youtube.com/Van Racingexhaust"
+        "https://www.instagram.com/WaHyu_Racingexhaust",
+        "https://www.facebook.com/WaHyu_Racingexhaust",
+        "https://www.youtube.com/WaHyu_Racingexhaust"
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -88,7 +88,7 @@ const SEO = ({
       "description": siteDescription,
       "publisher": {
         "@type": "Organization",
-        "name": "Van Racing Indonesia"
+        "name": "WaHyu_Racing Indonesia"
       },
       "potentialAction": {
         "@type": "SearchAction",
@@ -107,11 +107,11 @@ const SEO = ({
         "image": article.image || fullImage,
         "author": {
           "@type": "Person",
-          "name": article.author || "Tim Van Racing"
+          "name": article.author || "Tim WaHyu_Racing"
         },
         "publisher": {
           "@type": "Organization",
-          "name": "Van Racing Exhaust Indonesia",
+          "name": "WaHyu_Racing Exhaust Indonesia",
           "logo": {
             "@type": "ImageObject",
             "url": `${siteUrl}/images/logo.png`
@@ -136,11 +136,11 @@ const SEO = ({
         "image": product.images || [fullImage],
         "brand": {
           "@type": "Brand",
-          "name": "Van Racing"
+          "name": "WaHyu_Racing"
         },
         "manufacturer": {
           "@type": "Organization",
-          "name": "Van Racing Exhaust Indonesia"
+          "name": "WaHyu_Racing Exhaust Indonesia"
         },
         "offers": {
           "@type": "Offer",
@@ -149,7 +149,7 @@ const SEO = ({
           "availability": product.availability || "https://schema.org/InStock",
           "seller": {
             "@type": "Organization",
-            "name": "Van Racing Exhaust Indonesia"
+            "name": "WaHyu_Racing Exhaust Indonesia"
           }
         },
         "aggregateRating": product.rating ? {
@@ -169,7 +169,7 @@ const SEO = ({
     structuredData.push({
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Van Racing Exhaust Indonesia",
+      "name": "WaHyu_Racing Exhaust Indonesia",
       "image": `${siteUrl}/images/workshop.jpg`,
       "address": {
         "@type": "PostalAddress",
@@ -203,7 +203,7 @@ const SEO = ({
       <title>{fullTitle}</title>
       <meta name="description" content={fullDescription} />
       {keywords && <meta name="keywords" content={keywords} />}
-      <meta name="author" content="Van Racing Exhaust Indonesia" />
+      <meta name="author" content="WaHyu_Racing Exhaust Indonesia" />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href={fullUrl} />
 
@@ -221,7 +221,7 @@ const SEO = ({
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={fullDescription} />
       <meta name="twitter:image" content={fullImage} />
-      <meta name="twitter:site" content="@Van Racingexhaust" />
+      <meta name="twitter:site" content="@WaHyu_Racingexhaust" />
 
       {/* Additional Meta Tags */}
       <meta name="theme-color" content="#dc2626" />

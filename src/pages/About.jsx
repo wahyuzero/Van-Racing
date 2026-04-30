@@ -27,7 +27,7 @@ const About = () => {
     {
       icon: Shield,
       title: 'Kualitas Terjamin',
-      description: 'Setiap produk Van Racing melalui quality control ketat untuk memastikan standar kualitas premium yang konsisten.',
+      description: 'Setiap produk WaHyu_Racing melalui quality control ketat untuk memastikan standar kualitas premium yang konsisten.',
       color: 'text-blue-600'
     },
     {
@@ -84,7 +84,7 @@ const About = () => {
   const milestones = [
     {
       year: '2019',
-      title: 'Berdirinya Van Racing',
+      title: 'Berdirinya WaHyu_Racing',
       description: 'Memulai workshop kecil dengan fokus pada kualitas dan kepuasan customer'
     },
     {
@@ -122,7 +122,7 @@ const About = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Tentang Van Racing Exhaust Indonesia
+              Tentang WaHyu_Racing Exhaust Indonesia
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
               Dari workshop kecil hingga menjadi brand knalpot custom terpercaya di Indonesia
@@ -132,7 +132,7 @@ const About = () => {
                 size="lg"
                 className="bg-red-600 hover:bg-red-700 px-8 py-3 text-lg"
                 onClick={() => {
-                  const message = 'Halo Van Racing, saya ingin konsultasi untuk knalpot motor saya';
+                  const message = 'Halo WaHyu_Racing, saya ingin konsultasi untuk knalpot motor saya';
                   window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(message)}`, '_blank');
                 }}
               >
@@ -166,16 +166,16 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Cerita Van Racing
+                Cerita WaHyu_Racing
               </h2>
               <div className="space-y-6 text-gray-700 leading-relaxed">
                 <p>
-                  <strong>Van Racing Exhaust Indonesia</strong> lahir dari passion mendalam terhadap dunia otomotif, 
+                  <strong>WaHyu_Racing Exhaust Indonesia</strong> lahir dari passion mendalam terhadap dunia otomotif, 
                   khususnya modifikasi knalpot motor. Dimulai pada tahun 2019 oleh Joko Susanto, seorang 
                   craftsman berpengalaman 15+ tahun di bidang fabrikasi logam dan exhaust system.
                 </p>
                 <p>
-                  Berawal dari workshop kecil di Jakarta Timur, Van Racing fokus pada satu hal: 
+                  Berawal dari workshop kecil di Jakarta Timur, WaHyu_Racing fokus pada satu hal: 
                   <em>menghadirkan knalpot berkualitas premium dengan suara khas yang mantap</em>. 
                   Setiap produk dibuat dengan perhatian detail tinggi, menggunakan material terbaik, 
                   dan melalui quality control yang ketat.
@@ -186,7 +186,7 @@ const About = () => {
                   dengan harga yang fair dan pelayanan yang memuaskan.
                 </p>
                 <p>
-                  Hingga kini, Van Racing telah melayani lebih dari 1000 customer di seluruh Indonesia 
+                  Hingga kini, WaHyu_Racing telah melayani lebih dari 1000 customer di seluruh Indonesia 
                   dengan rating kepuasan 4.9/5. Komitmen terhadap kualitas dan inovasi terus mendorong 
                   kami untuk berkembang dan memberikan yang terbaik bagi komunitas bikers Indonesia.
                 </p>
@@ -195,11 +195,11 @@ const About = () => {
             <div className="relative">
               <div className="aspect-[4/3] bg-gray-200 rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="/Logo-big.png"
-                  alt="Van Racing Workshop"
+                  src="/images/hero/hero-2.jpg"
+                  alt="WaHyu_Racing Workshop"
                   className="w-full h-full object-cover"
                   onError={(e) => {
-                    e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM3NSIgdmlld0JveD0iMCAwIDUwMCAzNzUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzc1IiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0yNTAgMTg3LjVDMjUwIDIyMC42MjEgMjUwIDIyMC42MjEgMjUwIDE4Ny41WiIgc3Ryb2tlPSIjOUNBM0FGIiBzdHJva2Utd2lkdGg9IjIiLz4KPHR5cGU+V29ya3Nob3AgSlZPVVNFPC90eXBlPgo8L3N2Zz4K';
+                    e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM3NSIgdmlld0JveD0iMCAwIDUwMCAzNzUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzc1IiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0yNTAgMTg3LjVDMjUwIDIyMC42MjEgMjUwIDIyMC42MjEgMjUwIDE4Ny41WiIgc3Ryb2tlPSIjOUNBM0FGIiBzdHJva2Utd2lkdGg9IjIiLz4KPHR5cGU+V29ya3Nob3AgV2FIeXVfUmFjaW5nPC90eXBlPgo8L3N2Zz4K';
                   }}
                 />
               </div>
@@ -275,7 +275,7 @@ const About = () => {
               Nilai-Nilai Kami
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Prinsip-prinsip yang menjadi fondasi setiap keputusan dan tindakan Van Racing
+              Prinsip-prinsip yang menjadi fondasi setiap keputusan dan tindakan WaHyu_Racing
             </p>
           </div>
 
@@ -298,10 +298,10 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Perjalanan Van Racing
+              Perjalanan WaHyu_Racing
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Milestone penting dalam perjalanan Van Racing dari tahun ke tahun
+              Milestone penting dalam perjalanan WaHyu_Racing dari tahun ke tahun
             </p>
           </div>
 
@@ -342,10 +342,10 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Tim Van Racing
+              Tim WaHyu_Racing
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Orang-orang berpengalaman dan berdedikasi di balik kualitas produk Van Racing
+              Orang-orang berpengalaman dan berdedikasi di balik kualitas produk WaHyu_Racing
             </p>
           </div>
 
@@ -424,8 +424,8 @@ const About = () => {
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Email</h3>
               <p className="text-gray-600 text-sm">
-                info@Van Racingexhaust.com<br />
-                support@Van Racingexhaust.com
+                info@WaHyu_Racingexhaust.com<br />
+                support@WaHyu_Racingexhaust.com
               </p>
             </div>
           </div>
@@ -436,7 +436,7 @@ const About = () => {
       <section className="py-16 bg-gradient-to-r from-red-600 to-orange-500 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Siap Bergabung dengan Keluarga Van Racing?
+            Siap Bergabung dengan Keluarga WaHyu_Racing?
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
             Konsultasi gratis dengan tim ahli kami untuk mendapatkan knalpot yang tepat sesuai motor dan kebutuhan Anda
@@ -447,7 +447,7 @@ const About = () => {
               size="lg"
               className="bg-white text-red-600 hover:bg-gray-100 px-8 py-3 text-lg"
               onClick={() => {
-                const message = 'Halo Van Racing, saya ingin konsultasi untuk knalpot motor saya setelah membaca tentang perusahaan Anda';
+                const message = 'Halo WaHyu_Racing, saya ingin konsultasi untuk knalpot motor saya setelah membaca tentang perusahaan Anda';
                 window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(message)}`, '_blank');
               }}
             >

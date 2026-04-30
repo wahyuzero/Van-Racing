@@ -127,8 +127,8 @@ const Workshop = () => {
     <div className="min-h-screen bg-gray-50 pt-20">
       <SEO 
         title="Workshop & Custom Order - Layanan Profesional Knalpot Motor"
-        description="Workshop Van Racing menyediakan layanan custom knalpot, instalasi profesional, tuning dyno test, dan maintenance. Teknisi berpengalaman dengan equipment lengkap."
-        keywords="workshop knalpot, custom knalpot, instalasi knalpot, tuning motor, dyno test, maintenance knalpot, Van Racing workshop"
+        description="Workshop WaHyu_Racing menyediakan layanan custom knalpot, instalasi profesional, tuning dyno test, dan maintenance. Teknisi berpengalaman dengan equipment lengkap."
+        keywords="workshop knalpot, custom knalpot, instalasi knalpot, tuning motor, dyno test, maintenance knalpot, WaHyu_Racing workshop"
         url="/workshop"
         type="website"
       />
@@ -467,7 +467,7 @@ const Workshop = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Keunggulan Workshop Van Racing
+              Keunggulan Workshop WaHyu_Racing
             </h2>
             <p className="text-lg text-gray-600">
               Kami menjaga ekspektasi tetap jelas sejak awal, supaya inquiry yang masuk lebih mudah diarahkan dan tidak membingungkan rider.

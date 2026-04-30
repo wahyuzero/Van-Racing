@@ -51,7 +51,7 @@ const Footer = () => {
     {
       icon: Shield,
       title: 'Garansi Jelas',
-      description: 'Panduan klaim manual lewat tim Van Racing'
+      description: 'Panduan klaim manual lewat tim WaHyu_Racing'
     },
     {
       icon: Truck,
@@ -94,7 +94,7 @@ const Footer = () => {
                 <span className="text-white font-bold text-xl">J</span>
               </div>
               <div>
-                <span className="text-xl font-bold">Van Racing</span>
+                <span className="text-xl font-bold">WaHyu_Racing</span>
                 <span className="block text-sm text-gray-400">Exhaust Indonesia</span>
               </div>
             </div>
@@ -116,7 +116,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-red-500 flex-shrink-0" />
-                <span className="text-sm text-gray-400">info@Van Racingexhaust.com</span>
+                <span className="text-sm text-gray-400">info@WaHyu_Racingexhaust.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Clock className="w-4 h-4 text-red-500 flex-shrink-0" />
@@ -193,7 +193,7 @@ const Footer = () => {
             <h4 className="text-md font-semibold mb-4">Ikuti Kami</h4>
             <div className="flex space-x-4">
               <a
-                href="https://instagram.com/Van Racingexhaust"
+                href="https://instagram.com/WaHyu_Racingexhaust"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors"
@@ -201,7 +201,7 @@ const Footer = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://youtube.com/@Van Racingexhaust"
+                href="https://youtube.com/@WaHyu_Racingexhaust"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
@@ -209,7 +209,7 @@ const Footer = () => {
                 <Youtube className="w-5 h-5" />
               </a>
               <a
-                href="https://facebook.com/Van Racingexhaust"
+                href="https://facebook.com/WaHyu_Racingexhaust"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
@@ -234,11 +234,11 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Van Racing Exhaust Indonesia. Semua hak cipta dilindungi.
+              © {currentYear} WaHyu_Racing Exhaust Indonesia. Semua hak cipta dilindungi.
             </p>
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
               <span className="text-gray-400 text-sm">Powered by</span>
-              <span className="text-red-500 font-semibold text-sm">#Van Racingsound</span>
+              <span className="text-red-500 font-semibold text-sm">#WaHyu_Racingsound</span>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
-# Van Racing Exhaust Indonesia Website
+# WaHyu_Racing Exhaust Indonesia Website
 
-Website resmi Van Racing Exhaust Indonesia - Spesialis knalpot custom dan racing motor berkualitas premium.
+Website resmi WaHyu_Racing Exhaust Indonesia - Spesialis knalpot custom dan racing motor berkualitas premium.
 
 ## 🚀 Fitur Utama
 
@@ -44,7 +44,7 @@ Website resmi Van Racing Exhaust Indonesia - Spesialis knalpot custom dan racing
 ## 📁 Struktur Project
 
 ```
-Van Racing-exhaust-website/
+WaHyu_Racing-exhaust-website/
 ├── public/                     # Static assets
 │   ├── favicon.ico            # Website favicon
 │   ├── robots.txt             # Search engine crawling rules
@@ -103,8 +103,8 @@ Van Racing-exhaust-website/
 ### Installation
 ```bash
 # Clone repository
-git clone https://github.com/Van Racing/website.git
-cd Van Racing-exhaust-website
+git clone https://github.com/WaHyu_Racing/website.git
+cd WaHyu_Racing-exhaust-website
 
 # Install dependencies
 pnpm install
@@ -138,7 +138,7 @@ pnpm run lint
 ## 🎨 Design System
 
 ### Colors
-- **Primary**: Red (#dc2626) - Brand color Van Racing
+- **Primary**: Red (#dc2626) - Brand color WaHyu_Racing
 - **Secondary**: Gray (#6b7280) - Text dan UI elements
 - **Success**: Green (#10b981) - Success states
 - **Warning**: Yellow (#f59e0b) - Warning states
@@ -223,7 +223,7 @@ pnpm run lint
 
 ### Implementation
 ```javascript
-const message = 'Halo Van Racing, saya ingin konsultasi gratis';
+const message = 'Halo WaHyu_Racing, saya ingin konsultasi gratis';
 const whatsappUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(message)}`;
 window.open(whatsappUrl, '_blank');
 ```
@@ -245,7 +245,7 @@ pnpm run build
 VITE_GA_TRACKING_ID=your_google_analytics_id
 
 # Optional: API endpoints
-VITE_API_BASE_URL=https://api.Van Racingexhaust.com
+VITE_API_BASE_URL=https://api.WaHyu_Racingexhaust.com
 ```
 
 ## 📈 Analytics & Tracking
@@ -273,16 +273,16 @@ VITE_API_BASE_URL=https://api.Van Racingexhaust.com
 
 ## 📄 License
 
-Copyright © 2024 Van Racing Exhaust Indonesia. All rights reserved.
+Copyright © 2024 WaHyu_Racing Exhaust Indonesia. All rights reserved.
 
 ## 📞 Support
 
-- **Website**: https://Van Racingexhaust.com
-- **Email**: info@Van Racingexhaust.com
+- **Website**: https://WaHyu_Racingexhaust.com
+- **Email**: info@WaHyu_Racingexhaust.com
 - **WhatsApp**: +62 812-3456-7890
-- **Instagram**: @Van Racingexhaust
-- **Facebook**: Van Racing Exhaust Indonesia
+- **Instagram**: @WaHyu_Racingexhaust
+- **Facebook**: WaHyu_Racing Exhaust Indonesia
 
 ---
 
-**Dibuat dengan ❤️ oleh Tim Van Racing untuk komunitas bikers Indonesia**
+**Dibuat dengan ❤️ oleh Tim WaHyu_Racing untuk komunitas bikers Indonesia**

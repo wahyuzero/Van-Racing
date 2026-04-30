@@ -25,7 +25,7 @@ function App() {
         <div className="min-h-screen flex flex-col bg-white">
           <SEO />
           <Header />
-          <main className="flex-1">
+          <main className="flex-1 pb-16 lg:pb-0">{/* pb-16 for mobile bottom nav */}
             <Routes>
             <Route path="/" element={<Home />} />
             {/* Placeholder routes - akan diimplementasikan di fase selanjutnya */}

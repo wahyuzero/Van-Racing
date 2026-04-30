@@ -71,10 +71,10 @@ const Gallery = () => {
               <Camera className="w-8 h-8" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Galeri Van Racing
+              Galeri WaHyu_Racing
             </h1>
             <p className="text-xl text-purple-100 max-w-3xl mx-auto mb-8">
-              Koleksi foto produk, workshop, customer bikes, dan momen-momen berharga Van Racing Exhaust Indonesia
+              Koleksi foto produk, workshop, customer bikes, dan momen-momen berharga WaHyu_Racing Exhaust Indonesia
             </p>
             
             {/* Quick Stats */}
@@ -109,7 +109,7 @@ const Gallery = () => {
                 Foto Pilihan
               </h2>
               <p className="text-lg text-gray-600">
-                Koleksi foto terbaik yang menunjukkan kualitas dan dedikasi Van Racing
+                Koleksi foto terbaik yang menunjukkan kualitas dan dedikasi WaHyu_Racing
               </p>
             </div>
 
@@ -386,7 +386,7 @@ const Gallery = () => {
             Ingin Motor Anda Tampil di Galeri Kami?
           </h3>
           <p className="text-purple-100 mb-6 max-w-2xl mx-auto">
-            Bagikan foto motor Anda dengan knalpot Van Racing! Foto terbaik akan kami tampilkan di galeri 
+            Bagikan foto motor Anda dengan knalpot WaHyu_Racing! Foto terbaik akan kami tampilkan di galeri 
             dan media sosial kami sebagai inspirasi untuk bikers lainnya.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -394,7 +394,7 @@ const Gallery = () => {
               size="lg"
               className="bg-white text-purple-600 hover:bg-gray-100 px-8"
               onClick={() => {
-                const message = 'Halo Van Racing, saya ingin berbagi foto motor saya dengan knalpot Van Racing untuk ditampilkan di galeri';
+                const message = 'Halo WaHyu_Racing, saya ingin berbagi foto motor saya dengan knalpot WaHyu_Racing untuk ditampilkan di galeri';
                 window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(message)}`, '_blank');
               }}
             >

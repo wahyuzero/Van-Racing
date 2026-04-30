@@ -2,8 +2,8 @@ export const galleryItems = [
   // Workshop & Production
   {
     id: 1,
-    title: 'Workshop JVOUSE - Area Produksi',
-    description: 'Area produksi utama workshop JVOUSE dengan peralatan modern untuk fabrikasi knalpot berkualitas tinggi.',
+    title: 'Workshop WaHyu_Racing - Area Produksi',
+    description: 'Area produksi utama workshop WaHyu_Racing dengan peralatan modern untuk fabrikasi knalpot berkualitas tinggi.',
     image: '/images/gallery/workshop-production.jpg',
     category: 'workshop',
     tags: ['workshop', 'produksi', 'fabrikasi'],
@@ -21,7 +21,7 @@ export const galleryItems = [
   {
     id: 3,
     title: 'Quality Control Station',
-    description: 'Setiap produk JVOUSE melalui quality control ketat untuk memastikan standar kualitas premium.',
+    description: 'Setiap produk WaHyu_Racing melalui quality control ketat untuk memastikan standar kualitas premium.',
     image: '/images/gallery/quality-control.jpg',
     category: 'workshop',
     tags: ['quality control', 'testing', 'standar'],
@@ -29,7 +29,7 @@ export const galleryItems = [
   },
   {
     id: 4,
-    title: 'Tim Craftsman JVOUSE',
+    title: 'Tim Craftsman WaHyu_Racing',
     description: 'Tim craftsman berpengalaman yang berdedikasi menghadirkan produk knalpot terbaik.',
     image: '/images/gallery/team-craftsman.jpg',
     category: 'workshop',
@@ -134,7 +134,7 @@ export const galleryItems = [
   {
     id: 14,
     title: 'Proses Instalasi Full System',
-    description: 'Dokumentasi proses instalasi full system oleh teknisi berpengalaman JVOUSE.',
+    description: 'Dokumentasi proses instalasi full system oleh teknisi berpengalaman WaHyu_Racing.',
     image: '/images/gallery/installation-process.jpg',
     category: 'installation',
     tags: ['instalasi', 'full system', 'teknisi'],
@@ -143,7 +143,7 @@ export const galleryItems = [
   {
     id: 15,
     title: 'Before After Installation',
-    description: 'Perbandingan sebelum dan sesudah instalasi knalpot JVOUSE, menunjukkan perbedaan yang signifikan.',
+    description: 'Perbandingan sebelum dan sesudah instalasi knalpot WaHyu_Racing, menunjukkan perbedaan yang signifikan.',
     image: '/images/gallery/before-after.jpg',
     category: 'installation',
     tags: ['before after', 'instalasi', 'perbandingan'],
@@ -154,7 +154,7 @@ export const galleryItems = [
   {
     id: 16,
     title: 'Customer Bike - R25 Street Setup',
-    description: 'Yamaha R25 customer dengan setup street riding menggunakan knalpot JVOUSE full system.',
+    description: 'Yamaha R25 customer dengan setup street riding menggunakan knalpot WaHyu_Racing full system.',
     image: '/images/gallery/customer-r25-street.jpg',
     category: 'customer',
     tags: ['customer', 'R25', 'street', 'yamaha'],
@@ -163,7 +163,7 @@ export const galleryItems = [
   {
     id: 17,
     title: 'Customer Bike - CBR Track Ready',
-    description: 'Honda CBR250RR customer yang sudah siap untuk track day dengan knalpot JVOUSE racing setup.',
+    description: 'Honda CBR250RR customer yang sudah siap untuk track day dengan knalpot WaHyu_Racing racing setup.',
     image: '/images/gallery/customer-cbr-track.jpg',
     category: 'customer',
     tags: ['customer', 'CBR', 'track', 'racing'],
@@ -172,7 +172,7 @@ export const galleryItems = [
   {
     id: 18,
     title: 'Customer Bike - Ninja Touring',
-    description: 'Kawasaki Ninja 250 customer dengan setup touring menggunakan knalpot JVOUSE medium racing.',
+    description: 'Kawasaki Ninja 250 customer dengan setup touring menggunakan knalpot WaHyu_Racing medium racing.',
     image: '/images/gallery/customer-ninja-touring.jpg',
     category: 'customer',
     tags: ['customer', 'Ninja', 'touring', 'kawasaki'],
@@ -182,8 +182,8 @@ export const galleryItems = [
   // Events & Community
   {
     id: 19,
-    title: 'JVOUSE di Jakarta Fair',
-    description: 'Booth JVOUSE di Jakarta Fair 2024, memamerkan produk-produk terbaru kepada pengunjung.',
+    title: 'WaHyu_Racing di Jakarta Fair',
+    description: 'Booth WaHyu_Racing di Jakarta Fair 2024, memamerkan produk-produk terbaru kepada pengunjung.',
     image: '/images/gallery/jakarta-fair-booth.jpg',
     category: 'events',
     tags: ['jakarta fair', 'booth', 'pameran', 'event'],
@@ -192,7 +192,7 @@ export const galleryItems = [
   {
     id: 20,
     title: 'Kopdar Komunitas Bikers',
-    description: 'Acara kopdar bersama komunitas bikers Jakarta yang menggunakan produk JVOUSE.',
+    description: 'Acara kopdar bersama komunitas bikers Jakarta yang menggunakan produk WaHyu_Racing.',
     image: '/images/gallery/bikers-meetup.jpg',
     category: 'events',
     tags: ['kopdar', 'komunitas', 'bikers', 'jakarta'],
@@ -201,7 +201,7 @@ export const galleryItems = [
   {
     id: 21,
     title: 'Track Day Sentul',
-    description: 'Sesi track day di Sentul International Circuit bersama customer JVOUSE.',
+    description: 'Sesi track day di Sentul International Circuit bersama customer WaHyu_Racing.',
     image: '/images/gallery/track-day-sentul.jpg',
     category: 'events',
     tags: ['track day', 'sentul', 'circuit', 'racing'],
@@ -212,7 +212,7 @@ export const galleryItems = [
   {
     id: 22,
     title: 'Sound Testing Lab',
-    description: 'Fasilitas sound testing JVOUSE untuk mengukur dan mengoptimalkan karakter suara setiap produk.',
+    description: 'Fasilitas sound testing WaHyu_Racing untuk mengukur dan mengoptimalkan karakter suara setiap produk.',
     image: '/images/gallery/sound-testing-lab.jpg',
     category: 'workshop',
     tags: ['sound testing', 'lab', 'akustik', 'pengujian'],
@@ -232,7 +232,7 @@ export const galleryItems = [
   {
     id: 24,
     title: 'Raw Material Stainless Steel',
-    description: 'Raw material stainless steel 304 berkualitas tinggi yang digunakan untuk produksi knalpot JVOUSE.',
+    description: 'Raw material stainless steel 304 berkualitas tinggi yang digunakan untuk produksi knalpot WaHyu_Racing.',
     image: '/images/gallery/raw-material-stainless.jpg',
     category: 'materials',
     tags: ['raw material', 'stainless steel', '304', 'kualitas'],
@@ -241,7 +241,7 @@ export const galleryItems = [
   {
     id: 25,
     title: 'Carbon Fiber Components',
-    description: 'Komponen carbon fiber berkualitas tinggi untuk finishing premium pada produk JVOUSE.',
+    description: 'Komponen carbon fiber berkualitas tinggi untuk finishing premium pada produk WaHyu_Racing.',
     image: '/images/gallery/carbon-fiber-components.jpg',
     category: 'materials',
     tags: ['carbon fiber', 'komponen', 'premium', 'finishing'],

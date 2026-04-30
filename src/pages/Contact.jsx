@@ -103,7 +103,7 @@ const Contact = () => {
         'Indonesia'
       ],
       action: 'Lihat di Maps',
-      actionUrl: 'https://www.google.com/maps/place/KNALPOT+Van Racing+EXHAUST'
+      actionUrl: 'https://www.google.com/maps/place/KNALPOT+WaHyu_Racing+EXHAUST'
     },
     {
       icon: Phone,
@@ -120,12 +120,12 @@ const Contact = () => {
       icon: Mail,
       title: 'Email',
       details: [
-        'info@Van Racingexhaust.com',
-        'workshop@Van Racingexhaust.com',
-        'custom@Van Racingexhaust.com'
+        'info@WaHyu_Racingexhaust.com',
+        'workshop@WaHyu_Racingexhaust.com',
+        'custom@WaHyu_Racingexhaust.com'
       ],
       action: 'Kirim Email',
-      actionUrl: 'mailto:info@Van Racingexhaust.com'
+      actionUrl: 'mailto:info@WaHyu_Racingexhaust.com'
     },
     {
       icon: Clock,
@@ -144,22 +144,22 @@ const Contact = () => {
     {
       icon: Instagram,
       name: 'Instagram',
-      handle: '@Van Racing_exhaust_indonesia',
-      url: 'https://www.instagram.com/Van Racing_exhaust_indonesia/',
+      handle: '@WaHyu_Racing_exhaust_indonesia',
+      url: 'https://www.instagram.com/WaHyu_Racing_exhaust_indonesia/',
       color: 'text-pink-600'
     },
     {
       icon: Facebook,
       name: 'Facebook',
-      handle: 'Van Racing Exhaust Indonesia',
-      url: 'https://facebook.com/Van Racingexhaust',
+      handle: 'WaHyu_Racing Exhaust Indonesia',
+      url: 'https://facebook.com/WaHyu_Racingexhaust',
       color: 'text-blue-600'
     },
     {
       icon: Youtube,
       name: 'YouTube',
-      handle: 'Van Racing Exhaust',
-      url: 'https://youtube.com/@Van Racingrecingexhaust1436',
+      handle: 'WaHyu_Racing Exhaust',
+      url: 'https://youtube.com/@WaHyu_Racingrecingexhaust1436',
       color: 'text-red-600'
     }
   ];
@@ -168,9 +168,9 @@ const Contact = () => {
     {
       icon: MessageCircle,
       title: 'Konsultasi Gratis',
-      description: 'Chat langsung dengan tim ahli Van Racing',
+      description: 'Chat langsung dengan tim ahli WaHyu_Racing',
       action: 'Chat WhatsApp',
-      url: 'https://wa.me/6281234567890?text=Halo%20Van Racing%2C%20saya%20ingin%20konsultasi%20gratis',
+      url: 'https://wa.me/6281234567890?text=Halo%20WaHyu_Racing%2C%20saya%20ingin%20konsultasi%20gratis',
       color: 'bg-green-500 hover:bg-green-600'
     },
     {
@@ -178,7 +178,7 @@ const Contact = () => {
       title: 'Kunjungi Workshop',
       description: 'Datang langsung ke workshop untuk melihat produk',
       action: 'Lihat Lokasi',
-      url: 'https://www.google.com/maps/place/KNALPOT+Van Racing+EXHAUST',
+      url: 'https://www.google.com/maps/place/KNALPOT+WaHyu_Racing+EXHAUST',
       color: 'bg-blue-500 hover:bg-blue-600'
     },
     {
@@ -186,7 +186,7 @@ const Contact = () => {
       title: 'Custom Order',
       description: 'Pesan knalpot custom sesuai motor Anda',
       action: 'Order Custom',
-      url: 'https://wa.me/6281234567890?text=Halo%20Van Racing%2C%20saya%20ingin%20order%20custom%20knalpot',
+      url: 'https://wa.me/6281234567890?text=Halo%20WaHyu_Racing%2C%20saya%20ingin%20order%20custom%20knalpot',
       color: 'bg-purple-500 hover:bg-purple-600'
     }
   ];
@@ -195,7 +195,7 @@ const Contact = () => {
     {
       icon: ShieldCheck,
       title: 'Cek channel pembelian',
-      description: 'Utamakan pembelian dari workshop, admin resmi, atau arahan langsung tim Van Racing. Jika Anda beli dari pihak lain, kami akan bantu cek manual lebih dulu.',
+      description: 'Utamakan pembelian dari workshop, admin resmi, atau arahan langsung tim WaHyu_Racing. Jika Anda beli dari pihak lain, kami akan bantu cek manual lebih dulu.',
     },
     {
       icon: FileCheck,
@@ -212,9 +212,9 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-50 pt-20">
       <SEO 
-        title="Kontak Kami - Van Racing Exhaust Indonesia"
-        description="Hubungi Van Racing Exhaust Indonesia untuk konsultasi gratis, custom order, atau kunjungi workshop kami di Jakarta Timur. Customer service 24/7."
-        keywords="kontak Van Racing, workshop knalpot Jakarta, konsultasi knalpot, custom order knalpot, alamat Van Racing"
+        title="Kontak Kami - WaHyu_Racing Exhaust Indonesia"
+        description="Hubungi WaHyu_Racing Exhaust Indonesia untuk konsultasi gratis, custom order, atau kunjungi workshop kami di Jakarta Timur. Customer service 24/7."
+        keywords="kontak WaHyu_Racing, workshop knalpot Jakarta, konsultasi knalpot, custom order knalpot, alamat WaHyu_Racing"
         url="/kontak"
         type="website"
       />
@@ -318,7 +318,7 @@ const Contact = () => {
               Panduan trust yang jujur, tanpa klaim verifikasi otomatis
             </h2>
             <p className="mt-4 text-lg text-slate-700">
-              Kalau Anda perlu cek keaslian produk Van Racing atau ingin menanyakan langkah klaim garansi, prosesnya masih dibantu manual oleh tim kami. Kami sengaja tidak menampilkan hasil verifikasi instan bila alurnya memang belum ada.
+              Kalau Anda perlu cek keaslian produk WaHyu_Racing atau ingin menanyakan langkah klaim garansi, prosesnya masih dibantu manual oleh tim kami. Kami sengaja tidak menampilkan hasil verifikasi instan bila alurnya memang belum ada.
             </p>
           </div>
 
@@ -588,9 +588,9 @@ const Contact = () => {
           <div className="aspect-[16/9] bg-gray-200 flex items-center justify-center">
             <div className="text-center">
               <Navigation className="w-12 h-12 text-gray-400 mx-auto mb-4" />
-              <p className="text-gray-600 mb-4">Peta Lokasi Workshop Van Racing</p>
+              <p className="text-gray-600 mb-4">Peta Lokasi Workshop WaHyu_Racing</p>
               <Button
-                onClick={() => window.open('https://www.google.com/maps/place/KNALPOT+Van Racing+EXHAUST', '_blank')}
+                onClick={() => window.open('https://www.google.com/maps/place/KNALPOT+WaHyu_Racing+EXHAUST', '_blank')}
                 className="bg-blue-600 hover:bg-blue-700"
               >
                 <MapPin className="w-4 h-4 mr-2" />

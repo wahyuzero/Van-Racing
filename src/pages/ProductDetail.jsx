@@ -144,7 +144,7 @@ const ProductDetail = () => {
           badgeClassName: 'bg-gray-100 text-gray-700 border-gray-300',
           textClassName: 'text-gray-700',
           detail: 'Status terbaru perlu dicek manual dengan tim. Kami sengaja tidak menampilkan klaim stok yang belum terkonfirmasi.',
-          ctaLabel: 'Hubungi Tim Van Racing',
+          ctaLabel: 'Hubungi Tim WaHyu_Racing',
           ctaMode: 'contact',
           primaryButtonClassName: 'bg-gray-800 hover:bg-gray-900 text-white',
           secondaryPrompt: 'Hubungi tim untuk cek status terbaru, alternatif terdekat, atau opsi workshop yang masih relevan.',
@@ -168,7 +168,7 @@ const ProductDetail = () => {
               badgeClassName: 'bg-gray-100 text-gray-700 border-gray-300',
               textClassName: 'text-gray-700',
               detail: 'Status terbaru perlu dicek manual dengan tim. Kami sengaja tidak menampilkan klaim stok yang belum terkonfirmasi.',
-              ctaLabel: 'Hubungi Tim Van Racing',
+              ctaLabel: 'Hubungi Tim WaHyu_Racing',
               ctaMode: 'contact',
               primaryButtonClassName: 'bg-gray-800 hover:bg-gray-900 text-white',
               secondaryPrompt: 'Hubungi tim untuk cek status terbaru, alternatif terdekat, atau opsi workshop yang masih relevan.',
@@ -388,9 +388,9 @@ const ProductDetail = () => {
   return (
     <div className="min-h-screen bg-gray-50 pt-20 pb-28 sm:pb-8">
       <SEO
-        title={`${product.name} - Knalpot Motor Van Racing`}
+        title={`${product.name} - Knalpot Motor WaHyu_Racing`}
         description={product.description}
-        keywords={`${product.name}, ${product.category}, knalpot ${product.compatibility?.[0] || 'motor'}, Van Racing, ${getSoundLabel(product.soundType)}`}
+        keywords={`${product.name}, ${product.category}, knalpot ${product.compatibility?.[0] || 'motor'}, WaHyu_Racing, ${getSoundLabel(product.soundType)}`}
         image={product.images?.[0]}
         url={`/produk/${product.id}`}
         type="product"
@@ -620,7 +620,7 @@ const ProductDetail = () => {
                       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Garansi & keaslian</p>
                       <h2 className="text-base font-semibold text-slate-900">Perlu cek manual sebelum Anda lanjut?</h2>
                       <p className="max-w-2xl text-sm text-slate-700">
-                        Untuk tahap MVP ini, verifikasi dilakukan manual oleh tim Van Racing. Jika Anda ragu soal keaslian produk, channel pembelian, atau langkah klaim garansi, siapkan foto produk, bukti transaksi, dan detail motor lalu hubungi kami.
+                        Untuk tahap MVP ini, verifikasi dilakukan manual oleh tim WaHyu_Racing. Jika Anda ragu soal keaslian produk, channel pembelian, atau langkah klaim garansi, siapkan foto produk, bukti transaksi, dan detail motor lalu hubungi kami.
                       </p>
                     </div>
                     <div className="flex flex-col gap-2 sm:min-w-[220px]">

@@ -313,11 +313,11 @@ const Products = () => {
   return (
     <div className="min-h-screen bg-gray-50 pt-20">
       <SEO
-        title={`${getCurrentCategoryName()} Knalpot Motor Van Racing`}
+        title={`${getCurrentCategoryName()} Knalpot Motor WaHyu_Racing`}
         description={filters.category === 'all'
-          ? 'Jelajahi katalog knalpot Van Racing untuk berbagai motor, karakter suara, dan kebutuhan harian atau custom. Konsultasi via WhatsApp tetap jadi jalur tercepat untuk cek kecocokan.'
-          : `Lihat pilihan ${getCurrentCategoryName()} dari Van Racing dengan filter material, suara, dan kebutuhan motor. WhatsApp tetap tersedia untuk bantu cek fitment sebelum order.`}
-        keywords="katalog knalpot motor, knalpot Van Racing, slip on, full system, custom exhaust, katalog knalpot racing"
+          ? 'Jelajahi katalog knalpot WaHyu_Racing untuk berbagai motor, karakter suara, dan kebutuhan harian atau custom. Konsultasi via WhatsApp tetap jadi jalur tercepat untuk cek kecocokan.'
+          : `Lihat pilihan ${getCurrentCategoryName()} dari WaHyu_Racing dengan filter material, suara, dan kebutuhan motor. WhatsApp tetap tersedia untuk bantu cek fitment sebelum order.`}
+        keywords="katalog knalpot motor, knalpot WaHyu_Racing, slip on, full system, custom exhaust, katalog knalpot racing"
         url={filters.category === 'all' ? '/produk' : `/produk?category=${filters.category}`}
         type="website"
       />

@@ -92,7 +92,7 @@ export const workshopServices = [
     bookingPrompt: 'Saya ingin reservasi pemasangan knalpot di workshop.',
     preparationChecklist: [
       'Info motor dan part yang akan dipasang',
-      'Foto area pemasangan bila part bukan produk Van Racing',
+      'Foto area pemasangan bila part bukan produk WaHyu_Racing',
       'Perkiraan waktu datang yang paling memungkinkan',
     ],
   },

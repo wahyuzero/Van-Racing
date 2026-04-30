@@ -132,8 +132,8 @@ const Home = () => {
     <div className="min-h-screen">
       <SEO 
         title="Knalpot Custom & Racing Motor Berkualitas Premium"
-        description="Van Racing Exhaust Indonesia - Spesialis knalpot custom dan racing motor. Full System, Slip On, Custom Order dengan material premium. Garansi resmi, pengiriman ke seluruh Indonesia."
-        keywords="knalpot motor, knalpot racing, knalpot custom, full system, slip on, Van Racing, exhaust motor, knalpot stainless steel, knalpot carbon, knalpot titanium"
+        description="WaHyu_Racing Exhaust Indonesia - Spesialis knalpot custom dan racing motor. Full System, Slip On, Custom Order dengan material premium. Garansi resmi, pengiriman ke seluruh Indonesia."
+        keywords="knalpot motor, knalpot racing, knalpot custom, full system, slip on, WaHyu_Racing, exhaust motor, knalpot stainless steel, knalpot carbon, knalpot titanium"
         url="/"
         type="website"
       />
@@ -244,7 +244,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Mengapa Pilih Van Racing?
+              Mengapa Pilih WaHyu_Racing?
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Komitmen kami untuk memberikan yang terbaik bagi komunitas bikers Indonesia
@@ -276,7 +276,7 @@ const Home = () => {
               Pilih Karakter Suara Anda
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Setiap knalpot Van Racing dirancang dengan karakteristik suara yang berbeda sesuai kebutuhan riding style
+              Setiap knalpot WaHyu_Racing dirancang dengan karakteristik suara yang berbeda sesuai kebutuhan riding style
             </p>
           </div>
 
@@ -450,7 +450,7 @@ const Home = () => {
             Siap Upgrade Knalpot Motor Anda?
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
-            Konsultasi gratis dengan tim ahli Van Racing untuk mendapatkan knalpot yang tepat sesuai motor dan kebutuhan Anda
+            Konsultasi gratis dengan tim ahli WaHyu_Racing untuk mendapatkan knalpot yang tepat sesuai motor dan kebutuhan Anda
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

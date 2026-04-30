@@ -1,6 +1,6 @@
 {
-  "name": "Van Racing Exhaust Indonesia",
-  "short_name": "Van Racing",
+  "name": "WaHyu_Racing Exhaust Indonesia",
+  "short_name": "WaHyu_Racing",
   "description": "Knalpot Custom & Racing Motor Berkualitas Premium",
   "start_url": "/",
   "display": "standalone",
@@ -41,7 +41,7 @@
     {
       "name": "Produk",
       "short_name": "Produk",
-      "description": "Lihat katalog produk knalpot Van Racing",
+      "description": "Lihat katalog produk knalpot WaHyu_Racing",
       "url": "/produk",
       "icons": [{ "src": "/favicon-32x32.png", "sizes": "32x32" }]
     },

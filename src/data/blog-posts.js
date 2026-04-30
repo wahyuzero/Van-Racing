@@ -3,11 +3,11 @@ export const blogPosts = [
     id: 1,
     title: 'Cara Memilih Knalpot Racing Sesuai Motor Anda',
     slug: 'cara-memilih-knalpot-racing-sesuai-motor',
-    excerpt: 'Panduan lengkap memilih knalpot yang tepat berdasarkan jenis motor, kebutuhan, dan budget. Tips dari para ahli Van Racing untuk mendapatkan hasil optimal.',
+    excerpt: 'Panduan lengkap memilih knalpot yang tepat berdasarkan jenis motor, kebutuhan, dan budget. Tips dari para ahli WaHyu_Racing untuk mendapatkan hasil optimal.',
     content: `
 # Cara Memilih Knalpot Racing Sesuai Motor Anda
 
-Memilih knalpot racing yang tepat adalah keputusan penting yang akan mempengaruhi performa, suara, dan pengalaman berkendara Anda. Sebagai brand knalpot terpercaya, Van Racing akan memandu Anda dalam memilih knalpot yang sesuai dengan motor dan kebutuhan Anda.
+Memilih knalpot racing yang tepat adalah keputusan penting yang akan mempengaruhi performa, suara, dan pengalaman berkendara Anda. Sebagai brand knalpot terpercaya, WaHyu_Racing akan memandu Anda dalam memilih knalpot yang sesuai dengan motor dan kebutuhan Anda.
 
 ## Faktor-Faktor yang Perlu Dipertimbangkan
 
@@ -42,7 +42,7 @@ Setiap motor memiliki karakteristik yang berbeda, dan knalpot harus disesuaikan 
 **Budget Terbatas (< Rp 1 juta):**
 - Slip on dengan material stainless steel 201
 - Fokus pada upgrade suara
-- Pilih brand terpercaya seperti Van Racing
+- Pilih brand terpercaya seperti WaHyu_Racing
 
 **Budget Menengah (Rp 1-2 juta):**
 - Full system dengan material premium
@@ -99,9 +99,9 @@ Setiap motor memiliki karakteristik yang berbeda, dan knalpot harus disesuaikan 
 4. **Mengabaikan after sales** - Pilih brand dengan layanan purna jual yang baik
 5. **Tidak konsultasi dengan ahli** - Manfaatkan layanan konsultasi gratis
 
-## Konsultasi dengan Van Racing
+## Konsultasi dengan WaHyu_Racing
 
-Tim ahli Van Racing siap membantu Anda memilih knalpot yang tepat. Kami menyediakan:
+Tim ahli WaHyu_Racing siap membantu Anda memilih knalpot yang tepat. Kami menyediakan:
 
 - Konsultasi gratis via WhatsApp
 - Rekomendasi berdasarkan motor dan kebutuhan
@@ -112,16 +112,16 @@ Jangan ragu untuk menghubungi kami di +62 812-3456-7890 untuk konsultasi lebih l
 
 ---
 
-*Artikel ini ditulis berdasarkan pengalaman 5+ tahun Van Racing melayani komunitas bikers Indonesia.*
+*Artikel ini ditulis berdasarkan pengalaman 5+ tahun WaHyu_Racing melayani komunitas bikers Indonesia.*
     `,
-    author: 'Tim Van Racing',
+    author: 'Tim WaHyu_Racing',
     publishDate: '2024-09-20',
     readTime: '5 min',
     tags: ['Tips', 'Panduan', 'Knalpot Racing', 'Motor'],
     featuredImage: '/A1.jpeg',
     category: 'Panduan',
-    seoTitle: 'Cara Memilih Knalpot Racing Sesuai Motor - Panduan Lengkap Van Racing',
-    seoDescription: 'Panduan lengkap memilih knalpot racing yang tepat berdasarkan jenis motor, kebutuhan, dan budget. Tips dari ahli Van Racing untuk hasil optimal.',
+    seoTitle: 'Cara Memilih Knalpot Racing Sesuai Motor - Panduan Lengkap WaHyu_Racing',
+    seoDescription: 'Panduan lengkap memilih knalpot racing yang tepat berdasarkan jenis motor, kebutuhan, dan budget. Tips dari ahli WaHyu_Racing untuk hasil optimal.',
     featured: true
   },
   {
@@ -132,7 +132,7 @@ Jangan ragu untuk menghubungi kami di +62 812-3456-7890 untuk konsultasi lebih l
     content: `
 # Perbedaan Full System vs Slip On: Mana yang Lebih Baik?
 
-Salah satu pertanyaan yang paling sering ditanyakan customer Van Racing adalah: "Sebaiknya saya pilih full system atau slip on?" Kedua jenis knalpot ini memiliki karakteristik yang berbeda dan cocok untuk kebutuhan yang berbeda pula.
+Salah satu pertanyaan yang paling sering ditanyakan customer WaHyu_Racing adalah: "Sebaiknya saya pilih full system atau slip on?" Kedua jenis knalpot ini memiliki karakteristik yang berbeda dan cocok untuk kebutuhan yang berbeda pula.
 
 ## Apa itu Full System?
 
@@ -248,7 +248,7 @@ Slip on hanya mengganti bagian belakang knalpot (muffler/silencer) saja, sementa
 
 1. **Tentukan prioritas**: Performa vs Budget vs Kepraktisan
 2. **Pertimbangkan penggunaan**: Harian vs Weekend vs Track
-3. **Konsultasi dengan ahli**: Manfaatkan layanan konsultasi Van Racing
+3. **Konsultasi dengan ahli**: Manfaatkan layanan konsultasi WaHyu_Racing
 4. **Cek regulasi lokal**: Pastikan sesuai dengan aturan daerah
 5. **Pikirkan jangka panjang**: Apakah akan upgrade motor atau tetap?
 
@@ -259,11 +259,11 @@ Tidak ada jawaban yang mutlak mana yang lebih baik. Keduanya memiliki tempat dan
 - **Full System** untuk yang mengutamakan performa maksimal dan tidak masalah dengan kompleksitas
 - **Slip On** untuk yang ingin upgrade praktis dengan budget terjangkau
 
-Yang terpenting adalah memilih produk berkualitas dari brand terpercaya seperti Van Racing yang memberikan garansi dan after sales support yang baik.
+Yang terpenting adalah memilih produk berkualitas dari brand terpercaya seperti WaHyu_Racing yang memberikan garansi dan after sales support yang baik.
 
 ---
 
-*Butuh konsultasi lebih lanjut? Hubungi tim Van Racing di +62 812-3456-7890*
+*Butuh konsultasi lebih lanjut? Hubungi tim WaHyu_Racing di +62 812-3456-7890*
     `,
     author: 'Rudi Hartono',
     publishDate: '2024-09-18',
@@ -271,7 +271,7 @@ Yang terpenting adalah memilih produk berkualitas dari brand terpercaya seperti 
     tags: ['Full System', 'Slip On', 'Perbandingan', 'Panduan'],
     featuredImage: '/A2.jpeg',
     category: 'Panduan',
-    seoTitle: 'Full System vs Slip On: Perbandingan Lengkap - Van Racing Exhaust',
+    seoTitle: 'Full System vs Slip On: Perbandingan Lengkap - WaHyu_Racing Exhaust',
     seoDescription: 'Analisis mendalam perbedaan full system vs slip on. Kelebihan, kekurangan, dan rekomendasi untuk setiap jenis knalpot.',
     featured: true
   },
@@ -279,11 +279,11 @@ Yang terpenting adalah memilih produk berkualitas dari brand terpercaya seperti 
     id: 3,
     title: 'Tips Merawat Knalpot Stainless Steel Agar Awet',
     slug: 'tips-merawat-knalpot-stainless-steel',
-    excerpt: 'Cara mudah merawat knalpot stainless steel agar tetap mengkilap dan tahan lama. Panduan step-by-step dari tim Van Racing.',
+    excerpt: 'Cara mudah merawat knalpot stainless steel agar tetap mengkilap dan tahan lama. Panduan step-by-step dari tim WaHyu_Racing.',
     content: `
 # Tips Merawat Knalpot Stainless Steel Agar Awet
 
-Knalpot stainless steel Van Racing dirancang untuk tahan lama, namun perawatan yang tepat akan memastikan knalpot Anda tetap mengkilap dan berfungsi optimal selama bertahun-tahun. Berikut panduan lengkap perawatan dari tim Van Racing.
+Knalpot stainless steel WaHyu_Racing dirancang untuk tahan lama, namun perawatan yang tepat akan memastikan knalpot Anda tetap mengkilap dan berfungsi optimal selama bertahun-tahun. Berikut panduan lengkap perawatan dari tim WaHyu_Racing.
 
 ## Mengapa Perawatan Penting?
 
@@ -447,7 +447,7 @@ Knalpot bekerja dalam kondisi ekstrem dengan suhu tinggi dan paparan elemen luar
 - Kebocoran gas buang
 - Getaran berlebihan
 
-Jika mengalami tanda-tanda di atas, segera konsultasi dengan tim Van Racing.
+Jika mengalami tanda-tanda di atas, segera konsultasi dengan tim WaHyu_Racing.
 
 ## Kesimpulan
 
@@ -458,11 +458,11 @@ Perawatan knalpot stainless steel sebenarnya mudah jika dilakukan secara rutin. 
 3. **Prevention** - Hindari hal-hal yang merusak
 4. **Professional help** - Jangan ragu konsultasi jika ada masalah
 
-Dengan perawatan yang tepat, knalpot Van Racing Anda akan tetap mengkilap dan berfungsi optimal selama bertahun-tahun.
+Dengan perawatan yang tepat, knalpot WaHyu_Racing Anda akan tetap mengkilap dan berfungsi optimal selama bertahun-tahun.
 
 ---
 
-*Butuh bantuan perawatan knalpot? Tim Van Racing siap membantu di +62 812-3456-7890*
+*Butuh bantuan perawatan knalpot? Tim WaHyu_Racing siap membantu di +62 812-3456-7890*
     `,
     author: 'Andi Wijaya',
     publishDate: '2024-09-15',
@@ -470,19 +470,19 @@ Dengan perawatan yang tepat, knalpot Van Racing Anda akan tetap mengkilap dan be
     tags: ['Perawatan', 'Stainless Steel', 'Tips', 'Maintenance'],
     featuredImage: '/A3.jpeg',
     category: 'Perawatan',
-    seoTitle: 'Tips Merawat Knalpot Stainless Steel - Panduan Van Racing',
-    seoDescription: 'Cara mudah merawat knalpot stainless steel agar tetap mengkilap dan awet. Panduan lengkap dari ahli Van Racing.',
+    seoTitle: 'Tips Merawat Knalpot Stainless Steel - Panduan WaHyu_Racing',
+    seoDescription: 'Cara mudah merawat knalpot stainless steel agar tetap mengkilap dan awet. Panduan lengkap dari ahli WaHyu_Racing.',
     featured: true
   },
   {
     id: 4,
-    title: 'Review Suara Knalpot Van Racing di Motor Populer',
-    slug: 'review-suara-knalpot-Van Racing-motor-populer',
-    excerpt: 'Dengarkan dan bandingkan karakter suara knalpot Van Racing di berbagai motor populer Indonesia. Temukan yang sesuai dengan selera Anda.',
+    title: 'Review Suara Knalpot WaHyu_Racing di Motor Populer',
+    slug: 'review-suara-knalpot-WaHyu_Racing-motor-populer',
+    excerpt: 'Dengarkan dan bandingkan karakter suara knalpot WaHyu_Racing di berbagai motor populer Indonesia. Temukan yang sesuai dengan selera Anda.',
     content: `
-# Review Suara Knalpot Van Racing di Motor Populer
+# Review Suara Knalpot WaHyu_Racing di Motor Populer
 
-Suara adalah salah satu faktor terpenting dalam memilih knalpot. Setiap motor memiliki karakter suara yang unik, dan knalpot Van Racing dirancang untuk mengoptimalkan karakter tersebut. Mari kita review suara knalpot Van Racing di motor-motor populer Indonesia.
+Suara adalah salah satu faktor terpenting dalam memilih knalpot. Setiap motor memiliki karakter suara yang unik, dan knalpot WaHyu_Racing dirancang untuk mengoptimalkan karakter tersebut. Mari kita review suara knalpot WaHyu_Racing di motor-motor populer Indonesia.
 
 ## Yamaha R25 - The Sweet Screamer
 
@@ -491,15 +491,15 @@ Suara adalah salah satu faktor terpenting dalam memilih knalpot. Setiap motor me
 - High-pitched saat high RPM
 - Cenderung teredam untuk daily use
 
-### Dengan Van Racing Full System Stainless
+### Dengan WaHyu_Racing Full System Stainless
 - **Idle**: Deep rumble yang sophisticated
 - **Low RPM**: Throaty sound yang berkarakter
 - **High RPM**: Screaming sound yang addictive
 - **Overall**: 9/10 untuk karakter, 8/10 untuk volume
 
-*"Suara R25 dengan Van Racing benar-benar mengubah karakter motor. Dari yang tadinya halus jadi berkarakter banget!" - Budi, Jakarta*
+*"Suara R25 dengan WaHyu_Racing benar-benar mengubah karakter motor. Dari yang tadinya halus jadi berkarakter banget!" - Budi, Jakarta*
 
-### Dengan Van Racing Slip On Carbon Look
+### Dengan WaHyu_Racing Slip On Carbon Look
 - **Idle**: Subtle improvement dari original
 - **Low RPM**: Lebih berkarakter tanpa terlalu loud
 - **High RPM**: Sweet spot antara performa dan kenyamanan
@@ -512,7 +512,7 @@ Suara adalah salah satu faktor terpenting dalam memilih knalpot. Setiap motor me
 - Tidak terlalu high-pitched
 - Cocok untuk berbagai kondisi
 
-### Dengan Van Racing Slip On Stainless
+### Dengan WaHyu_Racing Slip On Stainless
 - **Idle**: Warm rumble yang menyenangkan
 - **Low RPM**: Deep tone yang tidak mengganggu
 - **High RPM**: Sporty sound tanpa terlalu aggressive
@@ -527,13 +527,13 @@ Suara adalah salah satu faktor terpenting dalam memilih knalpot. Setiap motor me
 - Deep tone natural
 - Karakter twin cylinder yang khas
 
-### Dengan Van Racing Full System Titanium Look
+### Dengan WaHyu_Racing Full System Titanium Look
 - **Idle**: Menacing growl yang intimidating
 - **Low RPM**: Deep rumble yang powerful
 - **High RPM**: Aggressive roar yang thrilling
 - **Overall**: 9.5/10 untuk karakter, 9/10 untuk volume
 
-*"Ninja 250 dengan knalpot Van Racing ini suaranya ganas banget! Cocok buat weekend ride ke gunung." - Reza, Surabaya*
+*"Ninja 250 dengan knalpot WaHyu_Racing ini suaranya ganas banget! Cocok buat weekend ride ke gunung." - Reza, Surabaya*
 
 ## Yamaha Vixion - The Urban Cruiser
 
@@ -542,7 +542,7 @@ Suara adalah salah satu faktor terpenting dalam memilih knalpot. Setiap motor me
 - Cocok untuk commuting
 - Tidak terlalu berkarakter
 
-### Dengan Van Racing Slip On Stainless
+### Dengan WaHyu_Racing Slip On Stainless
 - **Idle**: Gentle rumble yang pleasant
 - **Low RPM**: Improved character tanpa berlebihan
 - **High RPM**: Sporty note yang subtle
@@ -557,13 +557,13 @@ Suara adalah salah satu faktor terpenting dalam memilih knalpot. Setiap motor me
 - Cukup berkarakter dari pabrik
 - Balance antara performa dan kenyamanan
 
-### Dengan Van Racing Full System Stainless
+### Dengan WaHyu_Racing Full System Stainless
 - **Idle**: Aggressive rumble yang confident
 - **Low RPM**: Throaty sound yang masculine
 - **High RPM**: Sporty roar yang exciting
 - **Overall**: 8.5/10 untuk karakter, 8/10 untuk volume
 
-## Perbandingan Tipe Suara Van Racing
+## Perbandingan Tipe Suara WaHyu_Racing
 
 ### Silent Racing
 - **Volume**: 6-7/10
@@ -605,19 +605,19 @@ Suara adalah salah satu faktor terpenting dalam memilih knalpot. Setiap motor me
 
 ## Audio Samples
 
-*Note: Audio samples dapat didengar di channel YouTube Van Racing atau melalui konsultasi WhatsApp*
+*Note: Audio samples dapat didengar di channel YouTube WaHyu_Racing atau melalui konsultasi WhatsApp*
 
 ### R25 Full System
 - Before: [Audio sample original]
-- After: [Audio sample Van Racing]
+- After: [Audio sample WaHyu_Racing]
 
 ### CBR150R Slip On
 - Before: [Audio sample original]
-- After: [Audio sample Van Racing]
+- After: [Audio sample WaHyu_Racing]
 
 ### Ninja 250 Full System
 - Before: [Audio sample original]
-- After: [Audio sample Van Racing]
+- After: [Audio sample WaHyu_Racing]
 
 ## Customer Reviews
 
@@ -629,15 +629,15 @@ Suara adalah salah satu faktor terpenting dalam memilih knalpot. Setiap motor me
 
 ### Testimoni Terpilih
 
-*"Suara knalpot Van Racing di R25 saya benar-benar mengubah pengalaman riding. Dari yang tadinya biasa aja jadi exciting banget!"* - **Fajar, Semarang**
+*"Suara knalpot WaHyu_Racing di R25 saya benar-benar mengubah pengalaman riding. Dari yang tadinya biasa aja jadi exciting banget!"* - **Fajar, Semarang**
 
-*"Slip on Van Racing untuk CBR150R perfect banget. Suaranya sporty tapi tidak ganggu tetangga."* - **Indra, Makassar**
+*"Slip on WaHyu_Racing untuk CBR150R perfect banget. Suaranya sporty tapi tidak ganggu tetangga."* - **Indra, Makassar**
 
-*"Full system Van Racing di Ninja 250 bikin motor berasa naik kelas. Suaranya ganas tapi tetap refined."* - **Wahyu, Palembang**
+*"Full system WaHyu_Racing di Ninja 250 bikin motor berasa naik kelas. Suaranya ganas tapi tetap refined."* - **Wahyu, Palembang**
 
 ## Kesimpulan
 
-Setiap motor memiliki karakter suara yang unik dengan knalpot Van Racing:
+Setiap motor memiliki karakter suara yang unik dengan knalpot WaHyu_Racing:
 
 - **R25**: Sweet screaming sound yang addictive
 - **CBR150R**: Balanced sporty tone yang versatile  
@@ -649,7 +649,7 @@ Yang terpenting adalah memilih sesuai dengan kebutuhan dan preferensi personal A
 
 ## Ingin Dengar Langsung?
 
-Kunjungi workshop Van Racing atau hubungi kami untuk:
+Kunjungi workshop WaHyu_Racing atau hubungi kami untuk:
 - Audio samples via WhatsApp
 - Test ride appointment
 - Konsultasi pemilihan tipe suara
@@ -657,7 +657,7 @@ Kunjungi workshop Van Racing atau hubungi kami untuk:
 
 ---
 
-*Hubungi Van Racing di +62 812-3456-7890 untuk konsultasi suara knalpot*
+*Hubungi WaHyu_Racing di +62 812-3456-7890 untuk konsultasi suara knalpot*
     `,
     author: 'Joko Susanto',
     publishDate: '2024-09-12',
@@ -665,8 +665,8 @@ Kunjungi workshop Van Racing atau hubungi kami untuk:
     tags: ['Review', 'Suara', 'Motor Populer', 'Audio'],
     featuredImage: '/images/blog/review-suara-knalpot.jpg',
     category: 'Review',
-    seoTitle: 'Review Suara Knalpot Van Racing di Motor Populer Indonesia',
-    seoDescription: 'Dengarkan dan bandingkan karakter suara knalpot Van Racing di berbagai motor populer. R25, CBR150R, Ninja 250, dan lainnya.',
+    seoTitle: 'Review Suara Knalpot WaHyu_Racing di Motor Populer Indonesia',
+    seoDescription: 'Dengarkan dan bandingkan karakter suara knalpot WaHyu_Racing di berbagai motor populer. R25, CBR150R, Ninja 250, dan lainnya.',
     featured: false
   },
   {
@@ -703,7 +703,7 @@ Memasang knalpot slip on sebenarnya cukup mudah dan bisa dilakukan sendiri di ru
 3. Semprotkan WD-40 jika baut susah dibuka
 4. Lepas knalpot original dengan hati-hati
 
-### Step 2: Persiapan Knalpot Van Racing
+### Step 2: Persiapan Knalpot WaHyu_Racing
 1. Unboxing dengan hati-hati
 2. Cek kelengkapan (knalpot, gasket, baut, bracket)
 3. Bersihkan permukaan sambungan
@@ -749,7 +749,7 @@ Memasang knalpot slip on sebenarnya cukup mudah dan bisa dilakukan sendiri di ru
 ### Knalpot Tidak Pas
 - Cek kompatibilitas dengan motor
 - Pastikan bracket terpasang benar
-- Konsultasi dengan Van Racing jika perlu
+- Konsultasi dengan WaHyu_Racing jika perlu
 
 ### Getaran Berlebihan
 - Cek semua baut pengikat
@@ -780,12 +780,12 @@ Meskipun instalasi slip on relatif mudah, ada kondisi dimana Anda sebaiknya ke b
 
 ## Garansi dan After Sales
 
-Knalpot Van Racing tetap bergaransi meskipun dipasang sendiri, asalkan:
+Knalpot WaHyu_Racing tetap bergaransi meskipun dipasang sendiri, asalkan:
 - Instalasi dilakukan dengan benar
 - Tidak ada modifikasi pada produk
 - Kerusakan bukan akibat kesalahan instalasi
 
-Jika ada masalah, tim Van Racing siap membantu troubleshooting via WhatsApp.
+Jika ada masalah, tim WaHyu_Racing siap membantu troubleshooting via WhatsApp.
 
 ## Kesimpulan
 
@@ -793,16 +793,16 @@ Instalasi knalpot slip on memang bisa dilakukan sendiri dengan persiapan dan keh
 
 ---
 
-*Butuh bantuan instalasi? Hubungi Van Racing di +62 812-3456-7890*
+*Butuh bantuan instalasi? Hubungi WaHyu_Racing di +62 812-3456-7890*
     `,
-    author: 'Tim Van Racing',
+    author: 'Tim WaHyu_Racing',
     publishDate: '2024-09-08',
     readTime: '5 min',
     tags: ['Instalasi', 'DIY', 'Slip On', 'Tutorial'],
     featuredImage: '/images/blog/instalasi-slip-on.jpg',
     category: 'Tutorial',
-    seoTitle: 'Cara Pasang Knalpot Slip On Sendiri - Tutorial Van Racing',
-    seoDescription: 'Panduan lengkap instalasi knalpot slip on untuk pemula. Step-by-step dengan tools dan tips safety dari ahli Van Racing.',
+    seoTitle: 'Cara Pasang Knalpot Slip On Sendiri - Tutorial WaHyu_Racing',
+    seoDescription: 'Panduan lengkap instalasi knalpot slip on untuk pemula. Step-by-step dengan tools dan tips safety dari ahli WaHyu_Racing.',
     featured: false
   }
 ];

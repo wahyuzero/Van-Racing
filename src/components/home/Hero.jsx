@@ -14,7 +14,7 @@ const Hero = () => {
       id: 1,
       title: "Knalpot Custom & Performance",
       subtitle: "Suara Mantap, Kualitas Premium",
-      description: "Rasakan pengalaman berkendara yang berbeda dengan knalpot custom Van Racing. Material premium, suara khas, dan kualitas terjamin.",
+      description: "Rasakan pengalaman berkendara yang berbeda dengan knalpot custom WaHyu_Racing. Material premium, suara khas, dan kualitas terjamin.",
       image: "/images/hero/hero-1.jpg",
       cta: "Lihat Produk",
       ctaLink: "/produk"
@@ -30,9 +30,9 @@ const Hero = () => {
     },
     {
       id: 3,
-      title: "Dengar Suara Knalpot Van Racing",
+      title: "Dengar Suara Knalpot WaHyu_Racing",
       subtitle: "Silent, Medium, Racing - Pilih Karaktermu",
-      description: "Setiap knalpot Van Racing dirancang dengan karakter suara yang berbeda sesuai kebutuhan riding style Anda.",
+      description: "Setiap knalpot WaHyu_Racing dirancang dengan karakter suara yang berbeda sesuai kebutuhan riding style Anda.",
       image: "/images/hero/hero-3.jpg",
       cta: "Dengar Suara",
       ctaLink: "/galeri",
@@ -76,7 +76,7 @@ const Hero = () => {
           <div className="text-white space-y-8">
             <div className="space-y-4">
               <div className="inline-flex items-center px-4 py-2 bg-red-600/20 backdrop-blur-sm rounded-full border border-red-500/30">
-                <span className="text-red-400 text-sm font-medium">🔥 #Van Racingsound</span>
+                <span className="text-red-400 text-sm font-medium">🔥 #WaHyu_Racingsound</span>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
@@ -174,10 +174,10 @@ const Hero = () => {
                 </div>
                 
                 <h3 className="text-xl font-semibold text-white mb-2">
-                  Dengar Suara Knalpot Van Racing
+                  Dengar Suara Knalpot WaHyu_Racing
                 </h3>
                 <p className="text-gray-300 text-sm mb-4">
-                  Rasakan perbedaan karakter suara dari setiap produk knalpot Van Racing. 
+                  Rasakan perbedaan karakter suara dari setiap produk knalpot WaHyu_Racing. 
                   Dari silent racing hingga racing loud.
                 </p>
                 

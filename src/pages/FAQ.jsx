@@ -47,7 +47,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            Temukan jawaban untuk pertanyaan yang sering diajukan tentang produk dan layanan Van Racing
+            Temukan jawaban untuk pertanyaan yang sering diajukan tentang produk dan layanan WaHyu_Racing
           </p>
         </div>
       </section>
@@ -128,7 +128,7 @@ const FAQ = () => {
                     size="sm"
                     className="w-full bg-green-600 hover:bg-green-700 text-xs"
                     onClick={() => {
-                      const message = 'Halo Van Racing, saya membutuhkan bantuan terkait produk/layanan Anda';
+                      const message = 'Halo WaHyu_Racing, saya membutuhkan bantuan terkait produk/layanan Anda';
                       window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(message)}`, '_blank');
                     }}
                   >
@@ -227,7 +227,7 @@ const FAQ = () => {
                   </Button>
                   <Button
                     onClick={() => {
-                      const message = 'Halo Van Racing, saya memiliki pertanyaan yang tidak ada di FAQ';
+                      const message = 'Halo WaHyu_Racing, saya memiliki pertanyaan yang tidak ada di FAQ';
                       window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(message)}`, '_blank');
                     }}
                     className="bg-blue-600 hover:bg-blue-700"
@@ -253,7 +253,7 @@ const FAQ = () => {
                     size="lg"
                     className="bg-white text-blue-600 hover:bg-gray-100 px-8"
                     onClick={() => {
-                      const message = 'Halo Van Racing, saya memiliki pertanyaan yang tidak ada di FAQ';
+                      const message = 'Halo WaHyu_Racing, saya memiliki pertanyaan yang tidak ada di FAQ';
                       window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(message)}`, '_blank');
                     }}
                   >

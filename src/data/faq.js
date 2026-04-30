@@ -2,8 +2,8 @@ export const faqData = [
   {
     id: 1,
     category: 'Produk',
-    question: 'Apakah knalpot JVOUSE bisa dipasang di semua motor?',
-    answer: 'Setiap produk knalpot JVOUSE dirancang khusus untuk motor tertentu. Kami menyediakan daftar kompatibilitas untuk setiap produk. Jika motor Anda tidak tercantum, silakan konsultasi dengan tim kami untuk memastikan kompatibilitas atau mempertimbangkan layanan custom order.'
+    question: 'Apakah knalpot WaHyu_Racing bisa dipasang di semua motor?',
+    answer: 'Setiap produk knalpot WaHyu_Racing dirancang khusus untuk motor tertentu. Kami menyediakan daftar kompatibilitas untuk setiap produk. Jika motor Anda tidak tercantum, silakan konsultasi dengan tim kami untuk memastikan kompatibilitas atau mempertimbangkan layanan custom order.'
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ export const faqData = [
   {
     id: 4,
     category: 'Pemesanan',
-    question: 'Bagaimana cara memesan produk JVOUSE?',
+    question: 'Bagaimana cara memesan produk WaHyu_Racing?',
     answer: 'Pemesanan sangat mudah: 1) Pilih produk yang diinginkan, 2) Klik tombol "Order WA" untuk chat langsung via WhatsApp, 3) Konfirmasi detail produk dan alamat pengiriman, 4) Lakukan pembayaran sesuai instruksi, 5) Produk akan segera diproses dan dikirim. Tim kami siap membantu sepanjang proses pemesanan.'
   },
   {
@@ -38,7 +38,7 @@ export const faqData = [
   {
     id: 7,
     category: 'Pengiriman',
-    question: 'Ke mana saja JVOUSE mengirim produk?',
+    question: 'Ke mana saja WaHyu_Racing mengirim produk?',
     answer: 'Kami mengirim ke seluruh Indonesia melalui ekspedisi terpercaya (JNE, J&T, SiCepat, dll). Untuk area Jabodetabek tersedia layanan same day delivery. Produk dikemas dengan sangat rapi dan aman menggunakan bubble wrap dan kardus khusus untuk mencegah kerusakan selama pengiriman.'
   },
   {
@@ -50,13 +50,13 @@ export const faqData = [
   {
     id: 9,
     category: 'Garansi',
-    question: 'Apa saja yang termasuk dalam garansi JVOUSE?',
-    answer: 'Garansi JVOUSE meliputi: Cacat material dan manufaktur, Karat pada stainless steel (dalam kondisi normal), Retak atau patah akibat cacat produksi. Garansi TIDAK meliputi: Kerusakan akibat kecelakaan, Modifikasi tidak sesuai prosedur, Penggunaan tidak sesuai spesifikasi, Kerusakan akibat kelalaian pengguna.'
+    question: 'Apa saja yang termasuk dalam garansi WaHyu_Racing?',
+    answer: 'Garansi WaHyu_Racing meliputi: Cacat material dan manufaktur, Karat pada stainless steel (dalam kondisi normal), Retak atau patah akibat cacat produksi. Garansi TIDAK meliputi: Kerusakan akibat kecelakaan, Modifikasi tidak sesuai prosedur, Penggunaan tidak sesuai spesifikasi, Kerusakan akibat kelalaian pengguna.'
   },
   {
     id: 10,
     category: 'Garansi',
-    question: 'Berapa lama masa garansi produk JVOUSE?',
+    question: 'Berapa lama masa garansi produk WaHyu_Racing?',
     answer: 'Masa garansi bervariasi per produk: Full System premium: 1 tahun, Slip On premium: 1 tahun, Produk ekonomis: 6 bulan, Custom order: 1 tahun. Garansi berlaku sejak tanggal pembelian dengan syarat penggunaan normal dan perawatan sesuai panduan.'
   },
   {
@@ -69,13 +69,13 @@ export const faqData = [
     id: 12,
     category: 'Pemasangan',
     question: 'Apakah pemasangan knalpot mempengaruhi garansi motor?',
-    answer: 'Pemasangan knalpot aftermarket umumnya tidak mempengaruhi garansi motor selama dipasang dengan benar dan tidak merusak komponen lain. Namun, kami sarankan untuk berkonsultasi dengan dealer resmi motor Anda. Knalpot JVOUSE dirancang untuk tidak mengganggu sistem engine management motor.'
+    answer: 'Pemasangan knalpot aftermarket umumnya tidak mempengaruhi garansi motor selama dipasang dengan benar dan tidak merusak komponen lain. Namun, kami sarankan untuk berkonsultasi dengan dealer resmi motor Anda. Knalpot WaHyu_Racing dirancang untuk tidak mengganggu sistem engine management motor.'
   },
   {
     id: 13,
     category: 'Perawatan',
-    question: 'Bagaimana cara merawat knalpot JVOUSE?',
-    answer: 'Perawatan knalpot JVOUSE sangat mudah: 1) Bersihkan secara rutin dengan air dan sabun, 2) Keringkan dengan lap bersih, 3) Untuk stainless steel, gunakan pembersih khusus stainless jika perlu, 4) Hindari benturan keras, 5) Periksa baut pengikat secara berkala. Dengan perawatan yang baik, knalpot JVOUSE akan awet dan tetap mengkilap.'
+    question: 'Bagaimana cara merawat knalpot WaHyu_Racing?',
+    answer: 'Perawatan knalpot WaHyu_Racing sangat mudah: 1) Bersihkan secara rutin dengan air dan sabun, 2) Keringkan dengan lap bersih, 3) Untuk stainless steel, gunakan pembersih khusus stainless jika perlu, 4) Hindari benturan keras, 5) Periksa baut pengikat secara berkala. Dengan perawatan yang baik, knalpot WaHyu_Racing akan awet dan tetap mengkilap.'
   },
   {
     id: 14,
@@ -86,14 +86,14 @@ export const faqData = [
   {
     id: 15,
     category: 'Teknis',
-    question: 'Apakah knalpot JVOUSE memerlukan tuning ECU?',
-    answer: 'Untuk sebagian besar motor injeksi modern, knalpot JVOUSE tidak memerlukan tuning ECU khusus karena dirancang dengan back pressure yang sesuai. Namun, untuk hasil optimal pada motor performa tinggi atau modifikasi ekstensif, tuning ECU disarankan. Tim kami dapat memberikan rekomendasi tuner terpercaya di kota Anda.'
+    question: 'Apakah knalpot WaHyu_Racing memerlukan tuning ECU?',
+    answer: 'Untuk sebagian besar motor injeksi modern, knalpot WaHyu_Racing tidak memerlukan tuning ECU khusus karena dirancang dengan back pressure yang sesuai. Namun, untuk hasil optimal pada motor performa tinggi atau modifikasi ekstensif, tuning ECU disarankan. Tim kami dapat memberikan rekomendasi tuner terpercaya di kota Anda.'
   },
   {
     id: 16,
     category: 'Teknis',
-    question: 'Apakah knalpot JVOUSE lolos uji emisi?',
-    answer: 'Knalpot JVOUSE dirancang untuk memenuhi standar emisi yang berlaku dengan tetap memberikan performa optimal. Namun, hasil uji emisi dapat bervariasi tergantung kondisi mesin dan setting motor. Untuk keperluan uji emisi resmi, pastikan motor dalam kondisi prima dan setting standar.'
+    question: 'Apakah knalpot WaHyu_Racing lolos uji emisi?',
+    answer: 'Knalpot WaHyu_Racing dirancang untuk memenuhi standar emisi yang berlaku dengan tetap memberikan performa optimal. Namun, hasil uji emisi dapat bervariasi tergantung kondisi mesin dan setting motor. Untuk keperluan uji emisi resmi, pastikan motor dalam kondisi prima dan setting standar.'
   }
 ];
 
